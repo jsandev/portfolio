@@ -1,0 +1,35 @@
+---
+import Header from "../components/Header.astro";
+import Services from "../components/Services.astro";
+import Works from "../components/Works.astro";
+import Projects from "../components/Projects.astro";
+import Footer from "../components/Footer.astro";
+
+import "@fontsource/ubuntu/300.css";
+import "@fontsource/ubuntu/400.css";
+import "@fontsource/ubuntu/500.css";
+import "@fontsource/ubuntu/700.css";
+
+import "@fontsource/ubuntu-condensed";
+
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Jimmy Sandoval</title>
+  </head>
+  <body>
+    <div class="w-full h-full grid grid-cols-1 auto-rows-auto">
+      <Header />
+      <Services />
+      <Works />
+      <Projects />
+      <Footer />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+---
+import { Icon } from "astro-icon";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-primary w-full pt-[7.875rem] px-[4rem] rounded-t-[2rem]">
+  <div class="w-full max-w-[1200px] mx-auto flex flex-col gap-[8.75rem]">
+    <div class="w-full flex items-start justify-between text-white">
+      <div class="w-full max-w-[19.375rem] flex flex-col gap-[3.75rem]">
+        <div class="flex flex-col">
+          <h3 class="font-medium text-[1.125rem] opacity-70">Contáctame.</h3>
+          <h1 class="font-medium text-[2.625rem] leading-[3rem]">
+            Hagamos algo <br />
+            increíble juntos
+          </h1>
+        </div>
+
+        <div class="w-full flex flex-col gap-[1.25rem]">
+          <a
+            href="mailto:jsandovaldev.pe@gmail.com"
+            class="flex items-center justify-between gap-[0.5rem] font-medium text-[1.125rem]"
+          >
+            jsandovaldev.pe@gmail.com
+            <Icon pack="mdi" name="arrow-forward" size={24} />
+          </a>
+          <a
+            href=""
+            target="_blank"
+            class="flex items-center justify-between gap-[0.5rem] font-medium text-[1.125rem]"
+          >
+            Escríbeme al whatsapp
+            <Icon pack="mdi" name="whatsapp" size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jimmysandovalramirez/"
+            target="_blank"
+            class="flex items-center justify-between gap-[0.5rem] font-medium text-[1.125rem]"
+          >
+            Escríbeme al linkedin
+            <Icon pack="mdi" name="linkedin" size={24} />
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full max-w-[24.375rem] flex flex-col gap-[2.125rem]">
+        <h1 class="font-medium text-[1.5rem]">Estima tu proyecto</h1>
+        <form class="w-full flex flex-col items-start gap-[1.875rem]">
+          <label for="name" class="w-full flex flex-col">
+            <p class="font-medium text-[1rem] opacity-80">
+              Nombres y apellidos:
+            </p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="w-full h-[2rem] appearance-none outline-none bg-transparent border-b-[1px] border-b-white70 text-[1rem] text-white80"
+            />
+          </label>
+          <label for="name" class="w-full flex flex-col">
+            <p class="font-medium text-[1rem] opacity-80">Tu correo:</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="w-full h-[2rem] appearance-none outline-none bg-transparent border-b-[1px] border-b-white70 text-[1rem] text-white80"
+            />
+          </label>
+          <label for="name" class="w-full flex flex-col">
+            <p class="font-medium text-[1rem] opacity-80 mb-[0.5rem]">
+              Cuéntame más sobre tu proyecto:
+            </p>
+            <textarea
+              rows="1"
+              class="w-full min-h-[32px] max-h-[100px] bg-transparent appearance-none outline-none border-b-[1px] border-b-white70 text-[1rem] text-white80"
+            ></textarea>
+          </label>
+          <button
+            class="h-[2.5rem] w-full max-w-[8.75rem] appearance-none outline-none bg-transparent border-[1px] border-white70 rounded-[0.25rem] font-ubuntu-condensed text-[1.25rem] text-white80 text-center"
+            >Enviar</button
+          >
+        </form>
+      </div>
+    </div>
+
+    <div class="w-full h-[5rem] flex items-start justify-between text-white">
+      <div class="flex items-center gap-[1.25rem]">
+        <a href="/" class="font-ubuntu font-bold text-[1.25rem]">JS.</a>
+        <p>© {year}. Todos los derechos reservados</p>
+      </div>
+      <div class="flex items-center gap-[0.25rem]">
+        <a href="" class="w-[2rem] h-[2rem] flex items-center justify-center">
+          <Icon pack="mdi" name="github" size={24} />
+        </a>
+        <a href="" class="w-[2rem] h-[2rem] flex items-center justify-center">
+          <Icon pack="mdi" name="linkedin" size={24} />
+        </a>
+        <a href="" class="w-[2rem] h-[2rem] flex items-center justify-center">
+          <Icon pack="mdi" name="twitter" size={24} />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

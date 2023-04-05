@@ -1,0 +1,186 @@
+---
+// import flip from "/icons/flip.png";
+import flip from "/icons/flip.svg";
+import animalsFrends from "/icons/animals-frends.png";
+import kgAcademy from "/icons/kg.png";
+
+import iconGooglePlay from "/icons/icon-google-play.svg";
+import iconAppStore from "/icons/icon-app-store.svg";
+import iconReact from "/icons/icon-react.svg";
+import iconTypescript from "/icons/icon-typescript.svg";
+import iconExpo from "/icons/icon-expo.svg";
+import iconReactNavigation from "/icons/icon-react-navigation.svg";
+import iconRedux from "/icons/icon-redux.svg";
+import iconHtml from "/icons/icon-html.svg";
+import iconNextjs from "/icons/icon-nextjs.svg";
+import iconTailwind from "/icons/icon-tailwindcss.svg";
+import iconStripe from "/icons/icon-stripe.svg";
+import iconSocket from "/icons/icon-socket.svg";
+---
+
+<section
+  class="w-full h-full max-w-[1200px] flex flex-col items-center gap-[6.875rem] mx-auto py-[15rem] px-[4rem]"
+>
+  <div class="flex flex-col items-center gap-[0.125rem]">
+    <h1
+      class="font-medium text-[2rem] text-primary text-center tracking-[-0.04em]"
+    >
+      Mis trabajos
+    </h1>
+    <h4
+      class="font-ubuntu-condensed text-[1.125rem] text-center text-secondary leading-[1.75rem]"
+    >
+      Ánimate a ver mis trabajos que hice
+    </h4>
+  </div>
+
+  <div class="w-full flex flex-col gap-[10rem]">
+    <div
+      class="w-full grid grid-cols-[minmax(300px,500px)_1fr] gap-[3.75rem] items-center"
+    >
+      <div class="flex items-center justify-center">
+        <img src={flip} class="w-full h-full" alt="Flip Inversiones App" />
+      </div>
+      <div class="w-full flex flex-col items-end gap-[1.25rem]">
+        <h1
+          class="font-medium text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
+        >
+          Flip Inversiones
+        </h1>
+        <p
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-right leading-[1.75rem]"
+        >
+          Es una app móvil donde puedes suscribir, rescatar y monitorear tus
+          inversiones en los fondos mutuos de la empresa Independiente SAF.
+        </p>
+        <div class="flex flex-col items-end gap-[0.3125rem]">
+          <h6
+            class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
+          >
+            Puedes descargarlo en
+          </h6>
+          <div class="flex items-center gap-[0.625rem]">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.flipinversiones.app"
+              target="_blank"
+            >
+              <img
+                src={iconGooglePlay}
+                class="w-full h-full"
+                alt="Google Play Store"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/pe/app/flip-inversiones/id1660821298"
+              target="_blank"
+            >
+              <img src={iconAppStore} class="w-full h-full" alt="App Store" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-end gap-[0.3125rem] mt-[0.3125rem]">
+          <h6
+            class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
+          >
+            Tecnologías aplicadas:
+          </h6>
+          <div class="flex items-center gap-[0.625rem]">
+            <img src={iconRedux} width="24" height="24" alt="Redux" />
+            <img src={iconReactNavigation} alt="Redux" />
+            <img src={iconExpo} alt="Expo" />
+            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <img src={iconReact} width="24" height="24" alt="React" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-full grid grid-cols-[1fr_minmax(300px,490px)] gap-[10rem] items-center"
+    >
+      <div class="w-full flex flex-col gap-[1.25rem]">
+        <h1
+          class="font-medium text-[2rem] text-primary tracking-[-0.04em] whitespace-nowrap"
+        >
+          Animals Frends
+        </h1>
+        <p
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary leading-[1.75rem]"
+        >
+          Landing de una colección de 10,000 NFT únicos e irrepetibles, que se
+          encuentra en la blockchain de ethereum.
+        </p>
+        <a
+          href="https://www.animalsfrends.io/"
+          target="_blank"
+          class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
+        >
+          Visitar sitio
+        </a>
+        <div class="flex flex-col gap-[0.3125rem]">
+          <h6 class="font-ubuntu-condensed text-[0.875rem] text-secondary">
+            Tecnologías aplicadas:
+          </h6>
+          <div class="flex items-center gap-[0.625rem]">
+            <img src={iconHtml} width="24" alt="HTML" />
+            <img src={iconReact} width="24" height="24" alt="React" />
+            <img src={iconNextjs} width="50" alt="Nextjs" />
+            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <img src={iconTailwind} width="110" alt="TailwindCss" />
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <img
+          src={animalsFrends}
+          class="w-full h-full object-cover"
+          alt="Animals Frends"
+        />
+      </div>
+    </div>
+    <div
+      class="w-full grid grid-cols-[minmax(300px,550px)_1fr] gap-[3.75rem] items-center"
+    >
+      <div class="flex items-center justify-center">
+        <img src={kgAcademy} class="w-full h-full" alt="KG Academy" />
+      </div>
+      <div class="w-full flex flex-col items-end gap-[1.25rem]">
+        <h1
+          class="font-medium text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
+        >
+          KG Trading Academy
+        </h1>
+        <p
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-right leading-[1.75rem]"
+        >
+          Es un portal de aprendizaje multiplataforma donde forman conocedores y
+          expertos con sólidos conocimientos en los mercados bursátiles,
+          impartiendo técnicas de trading y forex.
+        </p>
+        <a
+          href="https://kgtradingacademy.com/"
+          target="_blank"
+          class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
+        >
+          Visitar sitio
+        </a>
+        <div class="flex flex-col items-end gap-[0.3125rem] mt-[0.3125rem]">
+          <h6
+            class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
+          >
+            Tecnologías aplicadas:
+          </h6>
+          <div class="flex items-center gap-[0.625rem]">
+            <img src={iconHtml} width="24" alt="HTML" />
+            <img src={iconReact} width="24" height="24" alt="React" />
+            <img src={iconNextjs} width="50" alt="Nextjs" />
+            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <img src={iconRedux} width="24" height="24" alt="Redux" />
+            <img src={iconStripe} width="50" alt="Stripe" />
+            <img src={iconSocket} width="24" alt="Websocket" />
+            <img src={iconTailwind} width="110" alt="TailwindCss" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

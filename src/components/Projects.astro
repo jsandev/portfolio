@@ -1,0 +1,228 @@
+---
+import { Icon } from "astro-icon";
+
+import ecommerce from "/images/ecommerce.svg";
+import uiux1 from "/images/uiux1.svg";
+import uiux2 from "/images/uiux2.svg";
+import hounter from "/images/hounter.svg";
+
+import iconGooglePlay from "/icons/icon-google-play.svg";
+import iconAppStore from "/icons/icon-app-store.svg";
+import iconReact from "/icons/icon-react.svg";
+import iconTypescript from "/icons/icon-typescript.svg";
+import iconExpo from "/icons/icon-expo.svg";
+import iconReactNavigation from "/icons/icon-react-navigation.svg";
+import iconRedux from "/icons/icon-redux.svg";
+import iconHtml from "/icons/icon-html.svg";
+import iconNextjs from "/icons/icon-nextjs.svg";
+import iconNextjsMini from "/icons/icon-nextjs-mini.svg";
+import iconTailwind from "/icons/icon-tailwindcss.svg";
+import iconTailwindMini from "/icons/icon-tailwindcss-mini.svg";
+import iconStripe from "/icons/icon-stripe.svg";
+import iconSocket from "/icons/icon-socket.svg";
+---
+
+<section
+  class="w-full h-full max-w-[1200px] flex flex-col gap-[3.75rem] mx-auto pb-[10rem] px-[4rem]"
+>
+  <div class="flex flex-col gap-[0.5rem]">
+    <h1
+      class="relative font-medium text-[2rem] text-primary tracking-[-0.04em]"
+    >
+      Proyectos
+      <span
+        class="absolute top-[50%] -translate-x-1/2 left-[-2rem] w-[2rem] h-[1px] bg-primary"
+      ></span>
+    </h1>
+    <h4 class="font-ubuntu-condensed text-[1.125rem] text-secondary">
+      Mira mis pasatiempos y proyectos personales
+    </h4>
+  </div>
+  <div
+    class="w-full grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[2.625rem]"
+  >
+    <div class="relative w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
+      >
+        <img src={ecommerce} class="w-full" alt="Fast Ecommerce" />
+        <div
+          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
+        >
+          <div class="flex flex-col items-center gap-[0.625rem]">
+            <h6
+              class="font-ubuntu-condensed text-[0.875rem] text-white text-center"
+            >
+              Tecnologías aplicadas:
+            </h6>
+            <div class="flex items-center gap-[0.625rem]">
+              <img src={iconHtml} width="24" alt="HTML" />
+              <img src={iconTailwindMini} width="24" alt="TailwindCss" />
+              <img src={iconReact} width="24" height="24" alt="React" />
+              <img src={iconNextjsMini} width="24" alt="Nextjs" />
+              <img
+                src={iconTypescript}
+                width="24"
+                height="24"
+                alt="Typescript"
+              />
+              <img src={iconRedux} width="24" height="24" alt="Redux" />
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-2 gap-[0.5rem]">
+            <a
+              href="https://fast-ecommerce-template.vercel.app/"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed grid place-content-center text-primary text-[0.875rem] rounded-[0.5rem]"
+            >
+              Visitar
+            </a>
+            <a
+              href="https://github.com/jsandev/fast-ecommerce-template"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed flex items-center justify-center gap-[0.5rem] text-primary text-[0.875rem] rounded-[0.5rem] leading-[2rem]"
+            >
+              <Icon pack="mdi" name="github" size={24} />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex items-center justify-between">
+        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
+          Fast Ecommerce
+        </h3>
+        <span
+          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
+        >
+          Landing
+        </span>
+      </div>
+
+      <span
+        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
+      >
+        01
+      </span>
+    </div>
+    <div class="relative w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
+      >
+        <img
+          src={uiux1}
+          class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
+          alt="AQFX"
+        />
+      </div>
+      <div class="w-full flex items-center justify-between">
+        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
+          AQFX
+        </h3>
+        <span
+          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
+        >
+          UI/UX
+        </span>
+      </div>
+
+      <span
+        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
+      >
+        02
+      </span>
+    </div>
+    <div class="relative w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
+      >
+        <img src={hounter} class="w-full" alt="Fast Ecommerce" />
+        <div
+          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
+        >
+          <div class="flex flex-col items-center gap-[0.625rem]">
+            <h6
+              class="font-ubuntu-condensed text-[0.875rem] text-white text-center"
+            >
+              Tecnologías aplicadas:
+            </h6>
+            <div class="flex items-center gap-[0.625rem]">
+              <img src={iconHtml} width="24" alt="HTML" />
+              <img src={iconReact} width="24" height="24" alt="React" />
+              <img src={iconNextjsMini} width="24" alt="Nextjs" />
+              <img
+                src={iconTypescript}
+                width="24"
+                height="24"
+                alt="Typescript"
+              />
+              <img src={iconTailwindMini} width="24" alt="TailwindCss" />
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-2 gap-[0.5rem]">
+            <a
+              href="https://hounter-eta.vercel.app/"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed grid place-content-center text-primary text-[0.875rem] rounded-[0.5rem]"
+            >
+              Visitar
+            </a>
+            <a
+              href="https://github.com/jsandev/hounter"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed flex items-center justify-center gap-[0.5rem] text-primary text-[0.875rem] rounded-[0.5rem] leading-[2rem]"
+            >
+              <Icon pack="mdi" name="github" size={24} />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex items-center justify-between">
+        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
+          Hounter Clone
+        </h3>
+        <span
+          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
+        >
+          Landing
+        </span>
+      </div>
+
+      <span
+        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
+      >
+        03
+      </span>
+    </div>
+    <div class="relative w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
+      >
+        <img
+          src={uiux2}
+          class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
+          alt="Fibo Academy"
+        />
+      </div>
+      <div class="w-full flex items-center justify-between">
+        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
+          Fibo Academy
+        </h3>
+        <span
+          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
+        >
+          UI/UX
+        </span>
+      </div>
+
+      <span
+        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
+      >
+        04
+      </span>
+    </div>
+  </div>
+</section>
