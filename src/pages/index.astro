@@ -1,5 +1,6 @@
 ---
-import Header from "../components/Header.astro";
+import Link from "../components/Link.astro";
+import { Header } from "../components/Header/index";
 import Main from "../components/Main.astro";
 import Services from "../components/Services.astro";
 import Works from "../components/Works.astro";
@@ -27,7 +28,13 @@ import "../styles/global.css";
   </head>
   <body>
     <div class="w-full h-full grid grid-cols-1 auto-rows-auto">
-      <Header />
+      <Header client:load>
+        <Link title="Inicio" />
+        <Link title="Servicios" />
+        <Link title="Mis trabajos" />
+        <Link title="Proyectos" />
+        <Link title="Contáctame" />
+      </Header>
       <Main />
       <Services />
       <Works />
