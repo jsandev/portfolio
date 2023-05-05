@@ -19,7 +19,7 @@ import iconSocket from "/icons/icon-socket.svg";
 ---
 
 <section
-  class="w-full h-full max-w-[76.5rem] flex flex-col items-center gap-[6.875rem] mx-auto py-[15rem] px-[4rem]"
+  class="w-full h-full max-w-[76.5rem] flex flex-col items-center gap-[6.875rem] mx-auto py-[10rem] md:py-[15rem] px-[1.5rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem]"
 >
   <div class="flex flex-col items-center gap-[0.125rem]">
     <h1
@@ -36,24 +36,24 @@ import iconSocket from "/icons/icon-socket.svg";
 
   <div class="w-full flex flex-col gap-[10rem]">
     <div
-      class="w-full grid grid-cols-[minmax(300px,500px)_1fr] gap-[3.75rem] items-center"
+      class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
         <img src={flip} class="w-full h-full" alt="Flip Inversiones App" />
       </div>
-      <div class="w-full flex flex-col items-end gap-[1.25rem]">
+      <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
-          class="font-medium text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
+          class="font-medium text-[1.5rem] lg:text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
         >
           Flip Inversiones
         </h1>
         <p
-          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-right leading-[1.75rem]"
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-center md:text-right leading-[1.75rem]"
         >
           Es una app móvil donde puedes suscribir, rescatar y monitorear tus
           inversiones en los fondos mutuos de la empresa Independiente SAF.
         </p>
-        <div class="flex flex-col items-end gap-[0.3125rem]">
+        <div class="flex flex-col items-center md:items-end gap-[0.3125rem]">
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
@@ -78,13 +78,17 @@ import iconSocket from "/icons/icon-socket.svg";
             </a>
           </div>
         </div>
-        <div class="flex flex-col items-end gap-[0.3125rem] mt-[0.3125rem]">
+        <div
+          class="flex flex-col items-center md:items-end gap-[0.3125rem] mt-[0.3125rem]"
+        >
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
             Tecnologías aplicadas:
           </h6>
-          <div class="flex items-center gap-[0.625rem]">
+          <div
+            class="flex flex-wrap items-center justify-center gap-[0.625rem]"
+          >
             <img src={iconRedux} width="24" height="24" alt="Redux" />
             <img src={iconReactNavigation} alt="Redux" />
             <img src={iconExpo} alt="Expo" />
@@ -95,16 +99,18 @@ import iconSocket from "/icons/icon-socket.svg";
       </div>
     </div>
     <div
-      class="w-full grid grid-cols-[1fr_minmax(300px,490px)] gap-[10rem] items-center"
+      class="w-full flex flex-col md:grid md:grid-cols-[1fr_minmax(300px,1fr)] gap-[3rem] items-center"
     >
-      <div class="w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="w-full flex flex-col items-center md:items-start gap-[1.25rem]"
+      >
         <h1
-          class="font-medium text-[2rem] text-primary tracking-[-0.04em] whitespace-nowrap"
+          class="font-medium text-[1.5rem] lg:text-[2rem] text-primary tracking-[-0.04em] whitespace-nowrap"
         >
           Animals Frends
         </h1>
         <p
-          class="font-ubuntu-condensed text-[1.125rem] text-secondary leading-[1.75rem]"
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary leading-[1.75rem] text-center md:text-left"
         >
           Landing de una colección de 10,000 NFT únicos e irrepetibles, que se
           encuentra en la blockchain de ethereum.
@@ -116,11 +122,13 @@ import iconSocket from "/icons/icon-socket.svg";
         >
           Visitar sitio
         </a>
-        <div class="flex flex-col gap-[0.3125rem]">
+        <div class="flex flex-col items-center md:items-start gap-[0.3125rem]">
           <h6 class="font-ubuntu-condensed text-[0.875rem] text-secondary">
             Tecnologías aplicadas:
           </h6>
-          <div class="flex items-center gap-[0.625rem]">
+          <div
+            class="flex flex-row flex-wrap justify-center items-center gap-[0.625rem]"
+          >
             <img src={iconHtml} width="24" alt="HTML" />
             <img src={iconReact} width="24" height="24" alt="React" />
             <img src={iconNextjs} width="50" alt="Nextjs" />
@@ -138,19 +146,19 @@ import iconSocket from "/icons/icon-socket.svg";
       </div>
     </div>
     <div
-      class="w-full grid grid-cols-[minmax(300px,550px)_1fr] gap-[3.75rem] items-center"
+      class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
         <img src={kgAcademy} class="w-full h-full" alt="KG Academy" />
       </div>
-      <div class="w-full flex flex-col items-end gap-[1.25rem]">
+      <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
-          class="font-medium text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
+          class="font-medium text-[1.5rem] lg:text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
         >
           KG Trading Academy
         </h1>
         <p
-          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-right leading-[1.75rem]"
+          class="font-ubuntu-condensed text-[1.125rem] text-secondary text-center md:text-right leading-[1.75rem]"
         >
           Es un portal de aprendizaje multiplataforma donde forman conocedores y
           expertos con sólidos conocimientos en los mercados bursátiles,
@@ -163,13 +171,17 @@ import iconSocket from "/icons/icon-socket.svg";
         >
           Visitar sitio
         </a>
-        <div class="flex flex-col items-end gap-[0.3125rem] mt-[0.3125rem]">
+        <div
+          class="flex flex-col items-center md:items-end gap-[0.3125rem] mt-[0.3125rem]"
+        >
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
             Tecnologías aplicadas:
           </h6>
-          <div class="flex items-center gap-[0.625rem]">
+          <div
+            class="flex flex-row flex-wrap justify-center md:justify-end items-center gap-[0.625rem]"
+          >
             <img src={iconHtml} width="24" alt="HTML" />
             <img src={iconReact} width="24" height="24" alt="React" />
             <img src={iconNextjs} width="50" alt="Nextjs" />
