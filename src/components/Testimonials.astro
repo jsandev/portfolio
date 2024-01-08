@@ -1,7 +1,8 @@
 ---
 import { Icon } from "astro-icon";
+import {Image} from 'astro:assets'
 
-import testimonialImg1 from "/images/testimonial1.jpeg";
+import testimonialImg1 from "../assets/images/testimonial1.jpeg";
 ---
 
 <section
@@ -29,7 +30,7 @@ import testimonialImg1 from "/images/testimonial1.jpeg";
       <div
         class="w-[9.375rem] h-[9.375rem] absolute top-[-80px] left-[50%] -translate-x-1/2 border-[0.1875rem] bg-slate-100 border-white rounded-full overflow-hidden shadow-[0px_9px_20px_rgba(0,0,0,0.1)]"
       >
-        <img
+        <Image
           src={testimonialImg1}
           class="w-full h-full object-cover object-center"
           alt="Nicolas Dañino Cabieses"

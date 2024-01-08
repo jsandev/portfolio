@@ -1,5 +1,8 @@
 ---
-import photo from "/images/photo.png";
+import { Image } from 'astro:assets';
+
+import photo from "../assets/images/photo.png";
+
 ---
 
 <section
@@ -26,7 +29,7 @@ import photo from "/images/photo.png";
     </a>
   </div>
   <div class="ml-[50px] mr-[100px]">
-    <img src={photo} alt="Jimmy Sandoval" />
+    <Image src={photo} alt="Jimmy Sandoval" />
   </div>
   <div
     class="h-full w-full max-w-[18.75rem] flex flex-col items-start pb-[4rem]"

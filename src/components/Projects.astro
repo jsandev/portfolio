@@ -1,25 +1,26 @@
 ---
+import { Image } from 'astro:assets';
 import { Icon } from "astro-icon";
 
-import ecommerce from "/images/ecommerce.svg";
-import uiux1 from "/images/uiux1.svg";
-import uiux2 from "/images/uiux2.svg";
-import hounter from "/images/hounter.svg";
+import ecommerce from "../assets/images/ecommerce.svg";
+import uiux1 from "../assets/images/uiux1.svg";
+import uiux2 from "../assets/images/uiux2.svg";
+import hounter from "../assets/images/hounter.svg";
 
-import iconGooglePlay from "/icons/icon-google-play.svg";
-import iconAppStore from "/icons/icon-app-store.svg";
-import iconReact from "/icons/icon-react.svg";
-import iconTypescript from "/icons/icon-typescript.svg";
-import iconExpo from "/icons/icon-expo.svg";
-import iconReactNavigation from "/icons/icon-react-navigation.svg";
-import iconRedux from "/icons/icon-redux.svg";
-import iconHtml from "/icons/icon-html.svg";
-import iconNextjs from "/icons/icon-nextjs.svg";
-import iconNextjsMini from "/icons/icon-nextjs-mini.svg";
-import iconTailwind from "/icons/icon-tailwindcss.svg";
-import iconTailwindMini from "/icons/icon-tailwindcss-mini.svg";
-import iconStripe from "/icons/icon-stripe.svg";
-import iconSocket from "/icons/icon-socket.svg";
+import iconGooglePlay from "../assets/icons/icon-google-play.svg";
+import iconAppStore from "../assets/icons/icon-app-store.svg";
+import iconReact from "../assets/icons/icon-react.svg";
+import iconTypescript from "../assets/icons/icon-typescript.svg";
+import iconExpo from "../assets/icons/icon-expo.svg";
+import iconReactNavigation from "../assets/icons/icon-react-navigation.svg";
+import iconRedux from "../assets/icons/icon-redux.svg";
+import iconHtml from "../assets/icons/icon-html.svg";
+import iconNextjs from "../assets/icons/icon-nextjs.svg";
+import iconNextjsMini from "../assets/icons/icon-nextjs-mini.svg";
+import iconTailwind from "../assets/icons/icon-tailwindcss.svg";
+import iconTailwindMini from "../assets/icons/icon-tailwindcss-mini.svg";
+import iconStripe from "../assets/icons/icon-stripe.svg";
+import iconSocket from "../assets/icons/icon-socket.svg";
 ---
 
 <section
@@ -45,7 +46,7 @@ import iconSocket from "/icons/icon-socket.svg";
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <img src={ecommerce} class="w-full" alt="Fast Ecommerce" />
+        <Image src={ecommerce} class="w-full" alt="Fast Ecommerce" />
         <div
           class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
         >
@@ -56,17 +57,17 @@ import iconSocket from "/icons/icon-socket.svg";
               Tecnologías aplicadas:
             </h6>
             <div class="flex items-center gap-[0.625rem]">
-              <img src={iconHtml} width="24" alt="HTML" />
-              <img src={iconTailwindMini} width="24" alt="TailwindCss" />
-              <img src={iconReact} width="24" height="24" alt="React" />
-              <img src={iconNextjsMini} width="24" alt="Nextjs" />
-              <img
+              <Image src={iconHtml} width="24" alt="HTML" />
+              <Image src={iconTailwindMini} width="24" alt="TailwindCss" />
+              <Image src={iconReact} width="24" height="24" alt="React" />
+              <Image src={iconNextjsMini} width="24" alt="Nextjs" />
+              <Image
                 src={iconTypescript}
                 width="24"
                 height="24"
                 alt="Typescript"
               />
-              <img src={iconRedux} width="24" height="24" alt="Redux" />
+              <Image src={iconRedux} width="24" height="24" alt="Redux" />
             </div>
           </div>
 
@@ -110,7 +111,7 @@ import iconSocket from "/icons/icon-socket.svg";
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <img
+        <Image
           src={uiux1}
           class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
           alt="AQFX"
@@ -137,7 +138,7 @@ import iconSocket from "/icons/icon-socket.svg";
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <img src={hounter} class="w-full" alt="Fast Ecommerce" />
+        <Image src={hounter} class="w-full" alt="Fast Ecommerce" />
         <div
           class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
         >
@@ -148,16 +149,16 @@ import iconSocket from "/icons/icon-socket.svg";
               Tecnologías aplicadas:
             </h6>
             <div class="flex items-center gap-[0.625rem]">
-              <img src={iconHtml} width="24" alt="HTML" />
-              <img src={iconReact} width="24" height="24" alt="React" />
-              <img src={iconNextjsMini} width="24" alt="Nextjs" />
-              <img
+              <Image src={iconHtml} width="24" alt="HTML" />
+              <Image src={iconReact} width="24" height="24" alt="React" />
+              <Image src={iconNextjsMini} width="24" alt="Nextjs" />
+              <Image
                 src={iconTypescript}
                 width="24"
                 height="24"
                 alt="Typescript"
               />
-              <img src={iconTailwindMini} width="24" alt="TailwindCss" />
+              <Image src={iconTailwindMini} width="24" alt="TailwindCss" />
             </div>
           </div>
 
@@ -201,7 +202,7 @@ import iconSocket from "/icons/icon-socket.svg";
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <img
+        <Image
           src={uiux2}
           class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
           alt="Fibo Academy"

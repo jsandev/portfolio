@@ -1,21 +1,22 @@
 ---
-// import flip from "/icons/flip.png";
-import flip from "/icons/flip.svg";
-import animalsFrends from "/icons/animals-frends.png";
-import kgAcademy from "/icons/kg.png";
+import { Image } from 'astro:assets';
 
-import iconGooglePlay from "/icons/icon-google-play.svg";
-import iconAppStore from "/icons/icon-app-store.svg";
-import iconReact from "/icons/icon-react.svg";
-import iconTypescript from "/icons/icon-typescript.svg";
-import iconExpo from "/icons/icon-expo.svg";
-import iconReactNavigation from "/icons/icon-react-navigation.svg";
-import iconRedux from "/icons/icon-redux.svg";
-import iconHtml from "/icons/icon-html.svg";
-import iconNextjs from "/icons/icon-nextjs.svg";
-import iconTailwind from "/icons/icon-tailwindcss.svg";
-import iconStripe from "/icons/icon-stripe.svg";
-import iconSocket from "/icons/icon-socket.svg";
+import flip from "../assets/icons/flip.svg";
+import animalsFrends from "../assets/icons/animals-frends.png";
+import kgAcademy from "../assets/icons/kg.png";
+
+import iconGooglePlay from "../assets/icons/icon-google-play.svg";
+import iconAppStore from "../assets/icons/icon-app-store.svg";
+import iconReact from "../assets/icons/icon-react.svg";
+import iconTypescript from "../assets/icons/icon-typescript.svg";
+import iconExpo from "../assets/icons/icon-expo.svg";
+import iconReactNavigation from "../assets/icons/icon-react-navigation.svg";
+import iconRedux from "../assets/icons/icon-redux.svg";
+import iconHtml from "../assets/icons/icon-html.svg";
+import iconNextjs from "../assets/icons/icon-nextjs.svg";
+import iconTailwind from "../assets/icons/icon-tailwindcss.svg";
+import iconStripe from "../assets/icons/icon-stripe.svg";
+import iconSocket from "../assets/icons/icon-socket.svg";
 ---
 
 <section
@@ -39,7 +40,7 @@ import iconSocket from "/icons/icon-socket.svg";
       class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
-        <img src={flip} class="w-full h-full" alt="Flip Inversiones App" />
+        <Image src={flip} class="w-full h-full" alt="Flip Inversiones App" />
       </div>
       <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
@@ -64,7 +65,7 @@ import iconSocket from "/icons/icon-socket.svg";
               href="https://play.google.com/store/apps/details?id=com.flipinversiones.app"
               target="_blank"
             >
-              <img
+              <Image
                 src={iconGooglePlay}
                 class="w-full h-full"
                 alt="Google Play Store"
@@ -74,7 +75,7 @@ import iconSocket from "/icons/icon-socket.svg";
               href="https://apps.apple.com/pe/app/flip-inversiones/id1660821298"
               target="_blank"
             >
-              <img src={iconAppStore} class="w-full h-full" alt="App Store" />
+              <Image src={iconAppStore} class="w-full h-full" alt="App Store" />
             </a>
           </div>
         </div>
@@ -89,11 +90,11 @@ import iconSocket from "/icons/icon-socket.svg";
           <div
             class="flex flex-wrap items-center justify-center gap-[0.625rem]"
           >
-            <img src={iconRedux} width="24" height="24" alt="Redux" />
-            <img src={iconReactNavigation} alt="Redux" />
-            <img src={iconExpo} alt="Expo" />
-            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
-            <img src={iconReact} width="24" height="24" alt="React" />
+            <Image src={iconRedux} width="24" height="24" alt="Redux" />
+            <Image src={iconReactNavigation} alt="Redux" />
+            <Image src={iconExpo} alt="Expo" />
+            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <Image src={iconReact} width="24" height="24" alt="React" />
           </div>
         </div>
       </div>
@@ -129,16 +130,16 @@ import iconSocket from "/icons/icon-socket.svg";
           <div
             class="flex flex-row flex-wrap justify-center items-center gap-[0.625rem]"
           >
-            <img src={iconHtml} width="24" alt="HTML" />
-            <img src={iconReact} width="24" height="24" alt="React" />
-            <img src={iconNextjs} width="50" alt="Nextjs" />
-            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
-            <img src={iconTailwind} width="110" alt="TailwindCss" />
+            <Image src={iconHtml} width="24" alt="HTML" />
+            <Image src={iconReact} width="24" height="24" alt="React" />
+            <Image src={iconNextjs} width="50" alt="Nextjs" />
+            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <Image src={iconTailwind} width="110" alt="TailwindCss" />
           </div>
         </div>
       </div>
       <div class="flex items-center justify-center">
-        <img
+        <Image
           src={animalsFrends}
           class="w-full h-full object-cover"
           alt="Animals Frends"
@@ -149,7 +150,7 @@ import iconSocket from "/icons/icon-socket.svg";
       class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
-        <img src={kgAcademy} class="w-full h-full" alt="KG Academy" />
+        <Image src={kgAcademy} class="w-full h-full" alt="KG Academy" />
       </div>
       <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
@@ -182,14 +183,14 @@ import iconSocket from "/icons/icon-socket.svg";
           <div
             class="flex flex-row flex-wrap justify-center md:justify-end items-center gap-[0.625rem]"
           >
-            <img src={iconHtml} width="24" alt="HTML" />
-            <img src={iconReact} width="24" height="24" alt="React" />
-            <img src={iconNextjs} width="50" alt="Nextjs" />
-            <img src={iconTypescript} width="24" height="24" alt="Typescript" />
-            <img src={iconRedux} width="24" height="24" alt="Redux" />
-            <img src={iconStripe} width="50" alt="Stripe" />
-            <img src={iconSocket} width="24" alt="Websocket" />
-            <img src={iconTailwind} width="110" alt="TailwindCss" />
+            <Image src={iconHtml} width="24" alt="HTML" />
+            <Image src={iconReact} width="24" height="24" alt="React" />
+            <Image src={iconNextjs} width="50" alt="Nextjs" />
+            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <Image src={iconRedux} width="24" height="24" alt="Redux" />
+            <Image src={iconStripe} width="50" alt="Stripe" />
+            <Image src={iconSocket} width="24" alt="Websocket" />
+            <Image src={iconTailwind} width="110" alt="TailwindCss" />
           </div>
         </div>
       </div>
