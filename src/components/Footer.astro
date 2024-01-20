@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import { ContactForm } from "../components/ContactForm";
 
 const year = new Date().getFullYear();
 ---
@@ -63,43 +64,7 @@ const year = new Date().getFullYear();
         >
           Estima tu proyecto
         </h1>
-        <form
-          class="w-full flex flex-col items-center lg:items-start gap-[1.875rem]"
-        >
-          <label for="name" class="w-full flex flex-col">
-            <p class="font-medium text-[1rem] opacity-80">
-              Nombres y apellidos:
-            </p>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="w-full h-[2rem] appearance-none outline-none bg-transparent border-b-[1px] border-b-white70 text-[1rem] text-white80"
-            />
-          </label>
-          <label for="name" class="w-full flex flex-col">
-            <p class="font-medium text-[1rem] opacity-80">Tu correo:</p>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-full h-[2rem] appearance-none outline-none bg-transparent border-b-[1px] border-b-white70 text-[1rem] text-white80"
-            />
-          </label>
-          <label for="name" class="w-full flex flex-col">
-            <p class="font-medium text-[1rem] opacity-80 mb-[0.5rem]">
-              Cuéntame más sobre tu proyecto:
-            </p>
-            <textarea
-              rows="1"
-              class="w-full min-h-[32px] max-h-[100px] bg-transparent appearance-none outline-none border-b-[1px] border-b-white70 text-[1rem] text-white80"
-            ></textarea>
-          </label>
-          <button
-            class="h-[2.5rem] w-full max-w-[8.75rem] appearance-none outline-none bg-transparent border-[1px] border-white70 rounded-[0.25rem] font-ubuntu-condensed text-[1.25rem] text-white80 text-center"
-            >Enviar</button
-          >
-        </form>
+        <ContactForm client:load />
       </div>
     </div>
 
