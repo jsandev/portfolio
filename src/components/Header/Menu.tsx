@@ -24,12 +24,12 @@ export const Menu: React.FC<IProps> = ({
     >
       <ul
         className={classNames(
-          "flex flex-col lg:flex-row w-full max-w-[30rem] lg:max-w-auto bg-white justify-between items-center gap-[1.25rem] p-[1.5rem] lg:p-0 transition-[transform] duration-[150ms] ease-in lg:transition-none lg:translate-x-[0px]",
+          "flex flex-col lg:flex-row w-full max-w-[30rem] lg:max-w-auto bg-white justify-between items-center gap-[1.25rem] pb-[1.5rem] px-[1.5rem] lg:p-0 transition-[transform] duration-[150ms] ease-in lg:transition-none lg:translate-x-[0px]",
           menuVisible ? "translate-x-[0px]" : "translate-x-[30rem]"
         )}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="w-full flex items-center justify-between lg:hidden">
+        <div className="w-full min-h-[4rem] xs:min-h-[5rem] flex items-center justify-between lg:hidden">
           <a
             href="/"
             className="font-ubuntu font-bold text-[1.25rem] text-primary"

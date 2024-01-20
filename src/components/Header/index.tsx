@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 
@@ -8,8 +8,38 @@ import { Link } from "./Link";
 export const Header: React.FC<{}> = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
+  const [showShadow, setShowShadow] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+
+  const oldScrollY = useRef(0);
+
+  useEffect(() => {
+    const f = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 80) setShowShadow(true);
+      else setShowShadow(false);
+
+      if (currentScrollY > oldScrollY.current) setShowHeader(false);
+      else setShowHeader(true);
+
+      oldScrollY.current = currentScrollY;
+    };
+
+    document.addEventListener("scroll", f);
+
+    return () => document.removeEventListener("scroll", f);
+  }, []);
+
   return (
-    <header className="w-full min-h-[5rem] flex items-center">
+    <header
+      className="w-full min-h-[4rem] xs:min-h-[5rem] sticky bg-white z-[1] flex items-center"
+      style={{
+        boxShadow: showShadow ? "0 2px 6px 0 hsla(0,0%,76%,.25)" : undefined,
+        transition: "all 250ms cubic-bezier(0.33, 1, 0.68, 1)",
+        top: showHeader ? 0 : -80,
+      }}
+    >
       <div className="relative w-full h-full max-w-[76.5rem] mx-auto flex items-center justify-between px-[1.5rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem]">
         <a
           href=""
