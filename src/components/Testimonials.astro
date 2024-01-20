@@ -3,6 +3,7 @@ import { Icon } from "astro-icon";
 import {Image} from 'astro:assets'
 
 import testimonialImg1 from "../assets/images/testimonial1.jpeg";
+import testimonialImg2 from "../assets/images/testimonial2.jpeg";
 ---
 
 <section
@@ -17,15 +18,15 @@ import testimonialImg1 from "../assets/images/testimonial1.jpeg";
     <h1
       class="font-medium text-[1.75rem] text-primary text-center tracking-[-0.04em] leading-[1.75rem]"
     >
-      Lo que mis clientes piensan de mi
+      Lo que piensan de mí
     </h1>
   </div>
 
   <div
-    class="w-full flex flex-col items-center justify-center gap-x-[2.625rem] gap-y-[7.5rem]"
+    class="w-full flex flex-col md:flex-row items-center justify-center gap-x-[2.625rem] gap-y-[7.5rem]"
   >
     <div
-      class="w-full max-w-[31.25rem] relative bg-white flex flex-col gap-[1.875rem] pt-[6.25rem] pb-[1.5rem] px-[2.125rem] rounded-[1rem] shadow-[0px_11px_60px_rgba(0,0,0,0.1)]"
+      class="h-auto md:min-h-[380px] w-full max-w-[31.25rem] relative bg-white flex flex-col gap-[1.875rem] pt-[6.25rem] pb-[1.5rem] px-[2.125rem] rounded-[1rem] shadow-[0px_11px_60px_rgba(0,0,0,0.1)]"
     >
       <div
         class="w-[9.375rem] h-[9.375rem] absolute top-[-80px] left-[50%] -translate-x-1/2 border-[0.1875rem] bg-slate-100 border-white rounded-full overflow-hidden shadow-[0px_9px_20px_rgba(0,0,0,0.1)]"
@@ -74,6 +75,54 @@ import testimonialImg1 from "../assets/images/testimonial1.jpeg";
         APIs. Jimmy destacó por su rápida adaptabilidad a los requerimientos solicitados,
         por la proactividad mostrada y por su responsabilidad para cumplir con los
         plazos acordados.
+        <span
+          class="absolute bottom-[-10px] right-[-20px] text-primary rotate-180"
+        >
+          <Icon pack="bi" name="quote" size={32} />
+        </span>
+      </p>
+    </div>
+
+    <div
+      class="h-auto md:min-h-[380px] w-full max-w-[31.25rem] relative bg-white flex flex-col gap-[1.875rem] pt-[6.25rem] pb-[1.5rem] px-[2.125rem] rounded-[1rem] shadow-[0px_11px_60px_rgba(0,0,0,0.1)]"
+    >
+      <div
+        class="w-[9.375rem] h-[9.375rem] absolute top-[-80px] left-[50%] -translate-x-1/2 border-[0.1875rem] bg-slate-100 border-white rounded-full overflow-hidden shadow-[0px_9px_20px_rgba(0,0,0,0.1)]"
+      >
+        <Image
+          src={testimonialImg2}
+          class="w-full h-full object-cover object-center"
+          alt="Miguel Angel Castillo Berrospi"
+        />
+      </div>
+      <div class="w-full flex flex-col items-center gap-[0.3125rem]">
+        <h1
+          class="font-medium text-[1.25rem] text-primary text-center tracking-[-0.04em]"
+        >
+          Miguel Angel Castillo Berrospi
+        </h1>
+        <h3
+          class="font-ubuntu-condensed text-[1rem] text-center text-secondary"
+        >
+          Supervisor de Soporte de Sistemas at USIL
+        </h3>
+        <div class="flex items-center gap-[0.3125rem] text-primary">
+          <a
+            href="https://www.linkedin.com/in/miguel-angel-castillo-berrospi-89a4883a/"
+            target="_blank"
+            class="w-[1.5rem] h-[1.5rem] flex items-center justify-center"
+          >
+            <Icon pack="mdi" name="linkedin" size={24} />
+          </a>
+        </div>
+      </div>
+      <p
+        class="relative font-ubuntu-condensed text-[1rem] text-secondary leading-[1.5rem] text-center"
+      >
+        <span class="absolute top-[-30px] left-[-20px] text-primary">
+          <Icon pack="bi" name="quote" size={32} />
+        </span>
+        Su experiencia en desarrollo y soporte técnico es muy buena donde cumple a cabalidad todo lo encomendado que se le indica. Además, su capacidad para trabajar en equipo y comunicarse de manera efectiva fue fundamental para nuestros éxitos. Creo firmemente que aportará valiosas habilidades técnicas y un enfoque positivo al equipo donde se encuentre.
         <span
           class="absolute bottom-[-10px] right-[-20px] text-primary rotate-180"
         >
