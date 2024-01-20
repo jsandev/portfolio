@@ -8,6 +8,11 @@ import icon from "astro-icon";
 export default defineConfig({
   integrations: [tailwind(), react(), icon()],
   image: {
-    service: passthroughImageService()
-  }
+    service: passthroughImageService(),
+  },
+  vite: {
+    ssr: {
+      noExternal: ["react-icons"],
+    },
+  },
 });
