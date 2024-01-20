@@ -3,11 +3,9 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
 
 import { Menu } from "./Menu";
+import { Link } from "./Link";
 
-interface IProps {
-  children: React.ReactNode;
-}
-export const Header: React.FC<IProps> = ({ children }) => {
+export const Header: React.FC<{}> = () => {
   const [menuVisible, setMenuVisible] = useState(false);
 
   return (
@@ -26,7 +24,27 @@ export const Header: React.FC<IProps> = ({ children }) => {
           <FiMenu size={24} />
         </button>
         <Menu menuVisible={menuVisible} setMenuVisible={setMenuVisible}>
-          {children}
+          <Link title="Inicio" href="/" setMenuVisible={setMenuVisible} />
+          <Link
+            title="Servicios"
+            href="#services"
+            setMenuVisible={setMenuVisible}
+          />
+          <Link
+            title="Mis trabajos"
+            href="#works"
+            setMenuVisible={setMenuVisible}
+          />
+          <Link
+            title="Proyectos"
+            href="#projects"
+            setMenuVisible={setMenuVisible}
+          />
+          <Link
+            title="Contáctame"
+            href="#contact"
+            setMenuVisible={setMenuVisible}
+          />
         </Menu>
         <div className="hidden lg:flex items-center gap-[0.5rem]">
           <a
