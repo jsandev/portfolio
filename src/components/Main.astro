@@ -1,54 +1,42 @@
 ---
 import { Image } from 'astro:assets';
 
-import photo from "../assets/images/photo.png";
+import photo from "../assets/images/me.svg";
 
 ---
 
 <section
-  class="w-full relative h-full max-w-[76.5rem] flex justify-between items-end mx-auto pt-[170px] px-[4rem]"
+  class="w-full relative h-full max-w-[76.5rem] flex justify-center items-center gap-[3.25rem] mx-auto pt-[7.5rem] pb-[10rem] px-[4rem]"
 >
-  <div class="h-full flex flex-col items-start pb-[4rem]">
-    <h1 class="font-medium text-[2rem] text-primary leading-[2.125rem]">
-      Jimmy
-      <br />
-      Sandoval
-    </h1>
-    <span class="w-[2.5rem] h-[0.125rem] bg-primary my-[1.125rem]"></span>
-    <h3
-      class="font-medium italic text-[1.125rem] text-primary tracking-[-0.04em] mb-[2.75rem] whitespace-nowrap"
-    >
-      "Dar vida a tus ideas con <strong>código</strong>."
-    </h3>
-    <a
-      href="https://www.animalsfrends.io/"
-      target="_blank"
-      class="w-full max-w-[8.4375rem] h-[2.5rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[1.25rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
-    >
-      Contáctame
-    </a>
-  </div>
-  <div class="ml-[50px] mr-[100px]">
+  <div>
     <Image src={photo} alt="Jimmy Sandoval" />
   </div>
   <div
-    class="h-full w-full max-w-[18.75rem] flex flex-col items-start pb-[4rem]"
+    class="w-full max-w-[26.875rem] flex flex-col items-start -mt-[2rem]"
   >
     <h5 class="font-medium text-[1.125rem] text-primary60 tracking-[-0.04em]">
       Sobre mí.
     </h5>
+    <h1 class="font-bold text-[3rem] text-primary leading-[2.125rem] mt-[0.375rem] mb-[0.5rem]">
+      Jimmy Sandoval
+    </h1>
     <h1
-      class="font-medium text-[2rem] text-primary leading-[2.125rem] mb-[0.625rem]"
+      class="font-medium text-[2rem] text-primary leading-[2.125rem]"
     >
-      Fullstack Web
-      <br />
-      Developer
+      FullStack Developer
     </h1>
     <p
-      class="font-ubuntu-condensed text-[1.125rem] text-secondary leading-[1.5rem]"
+      class="font-ubuntu-condensed text-[1.25rem] text-secondary leading-[1.5rem] mt-[0.75rem] mb-[1.875rem]"
     >
-      Profesional con más de 3 años de experiencia en el mundo frontend, backend
-      y también desarrollo apps para iOS y Android.
+      Profesional con más de 4 años de experiencia en desarollo frontend, backend y mobile.
     </p>
+
+    <a
+      href="https://www.animalsfrends.io/"
+      target="_blank"
+      class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
+    >
+      Contáctame
+    </a>
   </div>
 </section>
