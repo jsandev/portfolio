@@ -1,13 +1,14 @@
 ---
 interface Props {
   title: string;
+  href: string
 }
 
-const { title } = Astro.props;
+const { title, href } = Astro.props;
 ---
 
 <a
-  href=""
+  href={href}
   class="relative group font-ubuntu-condensed text-[2rem] lg:text-[1.125rem] text-primary whitespace-nowrap"
 >
   {title}

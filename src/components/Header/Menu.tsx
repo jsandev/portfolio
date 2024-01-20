@@ -31,7 +31,7 @@ export const Menu: React.FC<IProps> = ({
       >
         <div className="w-full flex items-center justify-between lg:hidden">
           <a
-            href=""
+            href="/"
             className="font-ubuntu font-bold text-[1.25rem] text-primary"
           >
             JS.
