@@ -1,0 +1,29 @@
+---
+import { SEO } from "astro-seo";
+
+const title = "Jimmy Sandoval | FullStack Developer"
+const description = "FullStack Developer con 4+ años de experiencia. Transformo ideas en experiencias web cautivadoras. ¡Descubre cómo puedo potenciar tu producto o servicio!"
+---
+
+<SEO
+    title={title}
+    description={description}
+    openGraph={{
+        basic: {
+            title,
+            type: "website",
+            image: "/me.png",
+        }
+    }}
+    twitter={{
+        creator: "@iam_sam0610"
+    }}
+    extend={{
+        link: [{ rel: "icon", href: "/favicon.svg" }],
+        meta: [
+            { name: "twitter:image",content: "/me.png" },
+            { name: "twitter:title", content: title },
+            { name: "twitter:description", content: description },
+        ],
+    }}
+/>
