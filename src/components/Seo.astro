@@ -24,10 +24,12 @@ const description = "FullStack Developer con 4+ años de experiencia. Transformo
         card: "summary",
         title,
         description,
-        image: "./banner.png",
         imageAlt: title
     }}
     extend={{
         link: [{ rel: "icon", href: "/favicon.svg" }],
+        meta: [
+            { name: "twitter:image", content: "/banner.png" },
+        ],
     }}
 />
