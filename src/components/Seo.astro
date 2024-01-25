@@ -3,20 +3,24 @@ import { SEO } from "astro-seo";
 
 const title = "Jimmy Sandoval | FullStack Developer"
 const description = "FullStack Developer con 4+ años de experiencia. Transformo ideas en experiencias web cautivadoras. ¡Descubre cómo puedo potenciar tu producto o servicio!"
+const url = "https://portfolio-jsandev.vercel.app/"
 ---
 
 <SEO
     title={title}
     description={description}
+    canonical=""
     openGraph={{
         basic: {
+            url,
             title,
             type: "website",
             image: "/banner.png",
         },
         image: {
+            url: "/banner.png",
             width: 1200,
-            height: 600
+            height: 628
         }
     }}
     twitter={{
@@ -24,12 +28,10 @@ const description = "FullStack Developer con 4+ años de experiencia. Transformo
         card: "summary",
         title,
         description,
+        image: "/banner.png",
         imageAlt: title
     }}
     extend={{
         link: [{ rel: "icon", href: "/favicon.svg" }],
-        meta: [
-            { name: "twitter:image", content: "/banner.png" },
-        ],
     }}
 />
