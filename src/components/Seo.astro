@@ -12,18 +12,22 @@ const description = "FullStack Developer con 4+ años de experiencia. Transformo
         basic: {
             title,
             type: "website",
-            image: "/me.png",
+            image: "/banner.png",
+        },
+        image: {
+            width: 1200,
+            height: 600
         }
     }}
     twitter={{
-        creator: "@iam_sam0610"
+        creator: "@iam_sam0610",
+        card: "summary",
+        title,
+        description,
+        image: "./banner.png",
+        imageAlt: title
     }}
     extend={{
         link: [{ rel: "icon", href: "/favicon.svg" }],
-        meta: [
-            { name: "twitter:image",content: "/me.png" },
-            { name: "twitter:title", content: title },
-            { name: "twitter:description", content: description },
-        ],
     }}
 />
