@@ -1,8 +1,13 @@
 ---
 import { Icon } from "astro-icon/components";
+
 import { ContactForm } from "../components/ContactForm";
 
+import { getI18N } from "../i18n";
+
 const year = new Date().getFullYear();
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <footer id="contact" class="bg-primary w-full pt-[5rem] md:pt-[7.875rem] rounded-t-[2rem]">
@@ -17,13 +22,12 @@ const year = new Date().getFullYear();
       >
         <div class="flex flex-col items-center lg:items-start">
           <h3 class="font-medium text-[1rem] md:text-[1.125rem] opacity-70">
-            Contáctame.
+            {i18n.FOOTER.TITLE}
           </h3>
           <h1
             class="font-medium text-[2rem] md:text-[2.625rem] leading-[3rem] text-center lg:text-left"
           >
-            Hagamos algo <br class="hidden lg:inline-block" />
-            increíble juntos
+            {i18n.FOOTER.DESCRIPTION}
           </h1>
         </div>
 
@@ -42,7 +46,7 @@ const year = new Date().getFullYear();
             target="_blank"
             class="w-full flex items-center justify-between gap-[0.5rem] font-medium text-[1rem] md:text-[1.125rem]"
           >
-            Escríbeme al whatsapp
+            {i18n.FOOTER.WHATSAPP_TITLE}
             <Icon name="mdi:whatsapp" size={24} />
           </a>
           <a
@@ -50,7 +54,7 @@ const year = new Date().getFullYear();
             target="_blank"
             class="w-full flex items-center justify-between gap-[0.5rem] font-medium text-[1rem] md:text-[1.125rem]"
           >
-            Escríbeme al linkedin
+            {i18n.FOOTER.LINKEDIN_TITLE}
             <Icon name="mdi:linkedin" size={24} />
           </a>
         </div>
@@ -62,9 +66,9 @@ const year = new Date().getFullYear();
         <h1
           class="w-full font-medium text-[1.25rem] md:text-[1.5rem] text-center lg:text-start"
         >
-          Estima tu proyecto
+          {i18n.FOOTER.ESTIMATE_YOUR_PROJECT.TITLE}
         </h1>
-        <ContactForm client:load />
+        <ContactForm client:load currentLocale={currentLocale as string} />
       </div>
     </div>
 
@@ -74,7 +78,7 @@ const year = new Date().getFullYear();
       <div class="flex flex-col lg:flex-row items-center gap-[1.25rem]">
         <a href="/" class="font-ubuntu font-bold text-[1.25rem]">JS.</a>
         <p class="text-center md:text-left">
-          © {year}. Todos los derechos reservados
+          © {year}. {i18n.FOOTER.COPYRIGHT}
         </p>
       </div>
       <div class="flex items-center gap-[0.25rem]">

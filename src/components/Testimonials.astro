@@ -2,8 +2,13 @@
 import { Icon } from 'astro-icon/components'
 import {Image} from 'astro:assets'
 
+import { getI18N } from '../i18n';
+
 import testimonialImg1 from "../assets/images/testimonial1.jpeg";
 import testimonialImg2 from "../assets/images/testimonial2.jpeg";
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <section
@@ -13,12 +18,12 @@ import testimonialImg2 from "../assets/images/testimonial2.jpeg";
     <h4
       class="font-ubuntu-condensed text-[1.125rem] text-center text-secondary"
     >
-      Testimonios.
+      {i18n.TESTIMONIALS.TITLE}
     </h4>
     <h1
       class="font-medium text-[1.75rem] text-primary text-center tracking-[-0.04em] leading-[1.75rem]"
     >
-      Lo que piensan de mí
+      {i18n.TESTIMONIALS.DESCRIPTION}
     </h1>
   </div>
 
@@ -46,7 +51,7 @@ import testimonialImg2 from "../assets/images/testimonial2.jpeg";
         <h3
           class="font-ubuntu-condensed text-[1rem] text-center text-secondary"
         >
-          Head de Operaciones en Grupo Independiente
+          {i18n.TESTIMONIALS.NICOLAS.JOB}
         </h3>
         <div class="flex items-center gap-[0.3125rem] text-primary">
           <a
@@ -70,11 +75,7 @@ import testimonialImg2 from "../assets/images/testimonial2.jpeg";
         <span class="absolute top-[-30px] left-[-20px] text-primary">
           <Icon name="mdi:format-quote-open" size={32} />
         </span>
-        Trabajé con Jimmy en el desarollo del frontend del App de Flip Inversiones,
-        en el cual se tuvieron que hacer integraciones con el backend y diversos
-        APIs. Jimmy destacó por su rápida adaptabilidad a los requerimientos solicitados,
-        por la proactividad mostrada y por su responsabilidad para cumplir con los
-        plazos acordados.
+        {i18n.TESTIMONIALS.NICOLAS.COMMENT}
         <span
           class="absolute bottom-[-10px] right-[-20px] text-primary rotate-180"
         >
@@ -104,7 +105,7 @@ import testimonialImg2 from "../assets/images/testimonial2.jpeg";
         <h3
           class="font-ubuntu-condensed text-[1rem] text-center text-secondary"
         >
-          Supervisor de Soporte de Sistemas at USIL
+          {i18n.TESTIMONIALS.MIGUEL.JOB}
         </h3>
         <div class="flex items-center gap-[0.3125rem] text-primary">
           <a
@@ -122,7 +123,7 @@ import testimonialImg2 from "../assets/images/testimonial2.jpeg";
         <span class="absolute top-[-30px] left-[-20px] text-primary">
           <Icon name="mdi:format-quote-open" size={32} />
         </span>
-        Su experiencia en desarrollo y soporte técnico es muy buena donde cumple a cabalidad todo lo encomendado que se le indica. Además, su capacidad para trabajar en equipo y comunicarse de manera efectiva fue fundamental para nuestros éxitos. Creo firmemente que aportará valiosas habilidades técnicas y un enfoque positivo al equipo donde se encuentre.
+        {i18n.TESTIMONIALS.MIGUEL.COMMENT}
         <span
           class="absolute bottom-[-10px] right-[-20px] text-primary rotate-180"
         >

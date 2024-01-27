@@ -15,4 +15,11 @@ export default defineConfig({
       noExternal: ["react-icons"],
     },
   },
+  i18n: {
+    defaultLocale: "es",
+    locales: ["es", "en"],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });

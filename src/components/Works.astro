@@ -5,6 +5,8 @@ import flip from "../assets/icons/flip.svg";
 import animalsFrends from "../assets/icons/animals-frends.png";
 import kgAcademy from "../assets/icons/kg.png";
 
+import { getI18N } from '../i18n';
+
 import iconGooglePlay from "../assets/icons/icon-google-play.svg";
 import iconAppStore from "../assets/icons/icon-app-store.svg";
 import iconReact from "../assets/icons/icon-react.svg";
@@ -17,6 +19,9 @@ import iconNextjs from "../assets/icons/icon-nextjs.svg";
 import iconTailwind from "../assets/icons/icon-tailwindcss.svg";
 import iconStripe from "../assets/icons/icon-stripe.svg";
 import iconSocket from "../assets/icons/icon-socket.svg";
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <section
@@ -27,12 +32,12 @@ import iconSocket from "../assets/icons/icon-socket.svg";
     <h1
       class="font-medium text-[1.5rem] sm:text-[2rem] text-primary text-center tracking-[-0.04em]"
     >
-      Mis trabajos
+      {i18n.MY_WORKS.TITLE}
     </h1>
     <h4
       class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-center text-secondary leading-[1.75rem]"
     >
-      Ánimate a ver mis trabajos que hice
+      {i18n.MY_WORKS.DESCRIPTION}
     </h4>
   </div>
 
@@ -47,19 +52,18 @@ import iconSocket from "../assets/icons/icon-socket.svg";
         <h1
           class="font-medium text-[1.5rem] lg:text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
         >
-          Flip Inversiones
+          {i18n.MY_WORKS.FLIP.TITLE}
         </h1>
         <p
           class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-secondary text-center md:text-right leading-[1.75rem]"
         >
-          Es una app móvil donde puedes suscribir, rescatar y monitorear tus
-          inversiones en los fondos mutuos de la empresa Independiente SAF.
+          {i18n.MY_WORKS.FLIP.DESCRIPTION}
         </p>
         <div class="flex flex-col items-center md:items-end gap-[0.3125rem]">
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
-            Puedes descargarlo en
+            {i18n.MY_WORKS.DOWNLOAD_HERE}
           </h6>
           <div class="flex items-center gap-[0.625rem]">
             <a
@@ -86,7 +90,7 @@ import iconSocket from "../assets/icons/icon-socket.svg";
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
-            Tecnologías aplicadas:
+            {i18n.MY_WORKS.TECH_TEXT}
           </h6>
           <div
             class="flex flex-wrap items-center justify-center gap-[0.625rem]"
@@ -109,24 +113,23 @@ import iconSocket from "../assets/icons/icon-socket.svg";
         <h1
           class="font-medium text-[1.5rem] lg:text-[2rem] text-primary tracking-[-0.04em] whitespace-nowrap"
         >
-          Animals Frends
+          {i18n.MY_WORKS.ANIMALS_FRENDS.TITLE}
         </h1>
         <p
           class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-secondary leading-[1.75rem] text-center md:text-left"
         >
-          Landing de una colección de 10,000 NFT únicos e irrepetibles, que se
-          encuentra en la blockchain de ethereum.
+          {i18n.MY_WORKS.ANIMALS_FRENDS.DESCRIPTION}
         </p>
         <a
           href="https://www.animalsfrends.io/"
           target="_blank"
           class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
         >
-          Visitar sitio
+          {i18n.MY_WORKS.BUTTON_TITLE}
         </a>
         <div class="flex flex-col items-center md:items-start gap-[0.3125rem]">
           <h6 class="font-ubuntu-condensed text-[0.875rem] text-secondary">
-            Tecnologías aplicadas:
+            {i18n.MY_WORKS.TECH_TEXT}
           </h6>
           <div
             class="flex flex-row flex-wrap justify-center items-center gap-[0.625rem]"
@@ -143,7 +146,7 @@ import iconSocket from "../assets/icons/icon-socket.svg";
         <Image
           src={animalsFrends}
           class="w-full h-full object-cover"
-          alt="Animals Frends"
+          alt={i18n.MY_WORKS.ANIMALS_FRENDS.TITLE}
         />
       </div>
     </div>
@@ -157,21 +160,19 @@ import iconSocket from "../assets/icons/icon-socket.svg";
         <h1
           class="font-medium text-[1.5rem] lg:text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
         >
-          KG Trading Academy
+          {i18n.MY_WORKS.KG.TITLE}
         </h1>
         <p
           class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-secondary text-center md:text-right leading-[1.75rem]"
         >
-          Es un portal de aprendizaje multiplataforma donde forman conocedores y
-          expertos con sólidos conocimientos en los mercados bursátiles,
-          impartiendo técnicas de trading y forex.
+          {i18n.MY_WORKS.KG.DESCRIPTION}
         </p>
         <a
           href="https://kgtradingacademy.com/"
           target="_blank"
           class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
         >
-          Visitar sitio
+          {i18n.MY_WORKS.BUTTON_TITLE}
         </a>
         <div
           class="flex flex-col items-center md:items-end gap-[0.3125rem] mt-[0.3125rem]"
@@ -179,7 +180,7 @@ import iconSocket from "../assets/icons/icon-socket.svg";
           <h6
             class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
           >
-            Tecnologías aplicadas:
+            {i18n.MY_WORKS.TECH_TEXT}
           </h6>
           <div
             class="flex flex-row flex-wrap justify-center md:justify-end items-center gap-[0.625rem]"

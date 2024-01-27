@@ -1,16 +1,19 @@
 import classNames from "classnames";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
+import { LanguageSelector } from "./LanguageSelector";
 
 interface IProps {
   children: React.ReactNode;
   menuVisible: boolean;
   setMenuVisible: (v: boolean) => void;
+  currentLocale: string;
 }
 export const Menu: React.FC<IProps> = ({
   children,
   menuVisible,
   setMenuVisible,
+  currentLocale,
 }) => {
   const onClose = () => setMenuVisible(false);
 
@@ -24,7 +27,7 @@ export const Menu: React.FC<IProps> = ({
     >
       <ul
         className={classNames(
-          "flex flex-col lg:flex-row w-full max-w-[30rem] lg:max-w-auto bg-white justify-between items-center gap-[1.25rem] pb-[1.5rem] px-[1.5rem] lg:p-0 transition-[transform] duration-[150ms] ease-in lg:transition-none lg:translate-x-[0px]",
+          "flex flex-col lg:flex-row w-full max-w-[30rem] lg:max-w-auto bg-white justify-between items-center gap-[1.25rem] pb-[4rem] px-[1.5rem] lg:p-0 transition-[transform] duration-[150ms] ease-in lg:transition-none lg:translate-x-[0px]",
           menuVisible ? "translate-x-[0px]" : "translate-x-[30rem]"
         )}
         onClick={(e) => e.stopPropagation()}
@@ -46,28 +49,36 @@ export const Menu: React.FC<IProps> = ({
         <div className="w-full h-full flex flex-col lg:flex-row items-center justify-center gap-[2.5rem] lg:gap-[1.25rem]">
           {children}
         </div>
-        <div className="flex items-center gap-[1rem] lg:hidden">
-          <a
-            href="https://github.com/jsandev"
-            target="_blank"
-            className="w-[2rem] h-[2rem] flex items-center justify-center"
-          >
-            <FaGithub size={32} className="text-primary" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jimmysandovalramirez/"
-            target="_blank"
-            className="w-[2rem] h-[2rem] flex items-center justify-center"
-          >
-            <FaLinkedin size={32} className="text-primary" />
-          </a>
-          <a
-            href="https://twitter.com/iam_sam0610"
-            target="_blank"
-            className="w-[2rem] h-[2rem] flex items-center justify-center"
-          >
-            <FaTwitter size={32} className="text-primary" />
-          </a>
+        <div className="flex items-center gap-[1rem]">
+          <div className="flex items-center gap-[1rem] lg:hidden">
+            <a
+              href="https://github.com/jsandev"
+              target="_blank"
+              className="w-[2rem] h-[2rem] flex items-center justify-center"
+            >
+              <FaGithub size={28} className="text-primary" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jimmysandovalramirez/"
+              target="_blank"
+              className="w-[2rem] h-[2rem] flex items-center justify-center"
+            >
+              <FaLinkedin size={28} className="text-primary" />
+            </a>
+            <a
+              href="https://twitter.com/iam_sam0610"
+              target="_blank"
+              className="w-[2rem] h-[2rem] flex items-center justify-center"
+            >
+              <FaTwitter size={28} className="text-primary" />
+            </a>
+          </div>
+
+          <LanguageSelector
+            currentLocale={currentLocale}
+            position="top"
+            className="flex lg:hidden"
+          />
         </div>
       </ul>
     </nav>

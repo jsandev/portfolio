@@ -1,0 +1,43 @@
+---
+import { Header } from "../Header/index";
+import Main from "../Main.astro";
+import Services from "../Services.astro";
+import Works from "../Works.astro";
+import Projects from "../Projects.astro";
+import Testimonials from "../Testimonials.astro";
+import Footer from "../Footer.astro";
+import Seo from "../Seo.astro";
+
+import "@fontsource/ubuntu/300.css";
+import "@fontsource/ubuntu/400.css";
+import "@fontsource/ubuntu/500.css";
+import "@fontsource/ubuntu/700.css";
+
+import "@fontsource/ubuntu-condensed";
+
+import "../../styles/global.css";
+
+const { currentLocale } = Astro
+---
+
+<html lang={currentLocale}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <Seo />
+  </head>
+  <body>
+    <div class="w-full h-full grid grid-cols-1 auto-rows-auto">
+      <Header client:load currentLocale={currentLocale as string} />
+      <Main />
+      <Services />
+      <Works />
+      <Projects />
+      <Testimonials />
+      <Footer />
+    </div>
+  </body>
+</html>

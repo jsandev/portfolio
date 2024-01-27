@@ -1,4 +1,11 @@
-export const ContactForm = () => {
+import { getI18N } from "../i18n";
+
+interface IProps {
+  currentLocale: string;
+}
+export const ContactForm: React.FC<IProps> = ({ currentLocale }) => {
+  const i18n = getI18N({ currentLocale });
+
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -21,7 +28,7 @@ export const ContactForm = () => {
     >
       <label htmlFor="name" className="w-full flex flex-col">
         <p className="font-medium text-[1rem] opacity-80">
-          Nombres y apellidos:
+          {i18n.FOOTER.ESTIMATE_YOUR_PROJECT.NAME}
         </p>
         <input
           type="text"
@@ -32,7 +39,9 @@ export const ContactForm = () => {
         />
       </label>
       <label htmlFor="email" className="w-full flex flex-col">
-        <p className="font-medium text-[1rem] opacity-80">Tu correo:</p>
+        <p className="font-medium text-[1rem] opacity-80">
+          {i18n.FOOTER.ESTIMATE_YOUR_PROJECT.EMAIL}
+        </p>
         <input
           type="email"
           name="email"
@@ -43,7 +52,7 @@ export const ContactForm = () => {
       </label>
       <label htmlFor="message" className="w-full flex flex-col">
         <p className="font-medium text-[1rem] opacity-80 mb-[0.5rem]">
-          Cuéntame más sobre tu proyecto:
+          {i18n.FOOTER.ESTIMATE_YOUR_PROJECT.TEXT_AREA}
         </p>
         <textarea
           rows={1}
@@ -56,7 +65,7 @@ export const ContactForm = () => {
         type="submit"
         className="h-[2.5rem] w-full max-w-[8.75rem] appearance-none outline-none bg-transparent border-[1px] border-white70 rounded-[0.25rem] font-ubuntu-condensed text-[1.25rem] text-white80 text-center"
       >
-        Enviar
+        {i18n.FOOTER.ESTIMATE_YOUR_PROJECT.BUTTON_TITLE}
       </button>
     </form>
   );

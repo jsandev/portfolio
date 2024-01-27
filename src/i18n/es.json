@@ -1,0 +1,90 @@
+{
+  "SEO_TITLE": "Jimmy Sandoval | FullStack Developer",
+  "SEO_DESCRIPTION": "FullStack Developer con 4+ años de experiencia. Transformo ideas en experiencias web cautivadoras. ¡Descubre cómo puedo potenciar tu producto o servicio!",
+  "LANGUAGES": {
+    "ES": "Español",
+    "EN": "Inglés"
+  },
+  "MENU": {
+    "HOME": "Inicio",
+    "SERVICES": "Servicios",
+    "WORKS": "Mis trabajos",
+    "PROJECTS": "Proyectos",
+    "CONTACT": "Contáctame"
+  },
+  "MAIN": {
+    "ABOUT_ME_TITLE": "Sobre mí.",
+    "ABOUT_ME_DESCRIPTION": "Profesional con más de 4 años de experiencia en desarollo frontend, backend y mobile.",
+    "BUTTON": {
+      "CONTACT_ME": "Contáctame",
+      "CV": "Currículum"
+    }
+  },
+  "SERVICES": {
+    "TITLE": "Servicios",
+    "DESCRIPTION": "Conoce en lo que soy genial.",
+    "FRONTEND": {
+      "TITLE": "Frontend",
+      "DESCRIPTION": "Diseño y desarrollo de interfaces de usuario impresionantes y funcionales."
+    },
+    "BACKEND": {
+      "TITLE": "Backend",
+      "DESCRIPTION": "Desarrollo de backend que impulsa el rendimiento y la eficiencia de tu aplicación."
+    },
+    "MOBILE": {
+      "TITLE": "Mobile",
+      "DESCRIPTION": "Desarrollo de aplicaciones móviles innovadoras para tu negocio."
+    }
+  },
+  "MY_WORKS": {
+    "TITLE": "Mis trabajos",
+    "DESCRIPTION": "Ánimate a ver mis trabajos que hice.",
+    "TECH_TEXT": "Tecnologías aplicadas:",
+    "DOWNLOAD_HERE": "Puedes descargarlo en",
+    "BUTTON_TITLE": "Visitar sitio",
+    "FLIP": {
+      "TITLE": "Flip Inversiones",
+      "DESCRIPTION": "Es una app móvil donde puedes suscribir, rescatar y monitorear tus inversiones en los fondos mutuos de la empresa Independiente SAF."
+    },
+    "ANIMALS_FRENDS": {
+      "TITLE": "Animals Frends",
+      "DESCRIPTION": "Landing de una colección de 10,000 NFT únicos e irrepetibles, que se encuentra en la blockchain de ethereum."
+    },
+    "KG": {
+      "TITLE": "KG Trading Academy",
+      "DESCRIPTION": "Es un portal de aprendizaje multiplataforma donde forman conocedores y expertos con sólidos conocimientos en los mercados bursátiles, impartiendo técnicas de trading y forex."
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "DESCRIPTION": "Mira mis pasatiempos y proyectos personales.",
+    "TECH_TEXT": "Tecnologías aplicadas:",
+    "BUTTON_VISIT": "Visitar"
+  },
+  "TESTIMONIALS": {
+    "TITLE": "Testimonios.",
+    "DESCRIPTION": "Lo que piensan de mí",
+    "NICOLAS": {
+      "JOB": "Head de Operaciones en Grupo Independiente",
+      "COMMENT": "Trabajé con Jimmy en el desarollo del frontend del App de Flip Inversiones, en el cual se tuvieron que hacer integraciones con el backend y diversos APIs. Jimmy destacó por su rápida adaptabilidad a los requerimientos solicitados, por la proactividad mostrada y por su responsabilidad para cumplir con los plazos acordados."
+    },
+    "MIGUEL": {
+      "JOB": "Supervisor de Soporte de Sistemas en USIL",
+      "COMMENT": "Su experiencia en desarrollo y soporte técnico es muy buena donde cumple a cabalidad todo lo encomendado que se le indica. Además, su capacidad para trabajar en equipo y comunicarse de manera efectiva fue fundamental para nuestros éxitos. Creo firmemente que aportará valiosas habilidades técnicas y un enfoque positivo al equipo donde se encuentre."
+    }
+  },
+  "FOOTER": {
+    "TITLE": "Contáctame.",
+    "DESCRIPTION": "Hagamos algo increíble juntos",
+    "WHATSAPP_TITLE": "Escríbeme al Whatsapp",
+    "LINKEDIN_TITLE": "Escríbeme al Linkedin",
+    "ESTIMATE_YOUR_PROJECT": {
+      "TITLE": "Estima tu proyecto",
+      "NAME": "Nombres y apellidos:",
+      "EMAIL": "Tu correo:",
+      "TEXT_AREA": "Cuéntame más sobre tu proyecto:",
+      "BUTTON_TITLE": "Enviar"
+    },
+    "COPYRIGHT": "Todos los derechos reservados"
+  }
+}
