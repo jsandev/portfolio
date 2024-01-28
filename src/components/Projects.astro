@@ -4,10 +4,10 @@ import { Icon } from "astro-icon/components";
 
 import { getI18N } from '../i18n';
 
-import ecommerce from "../assets/images/ecommerce.svg";
-import uiux1 from "../assets/images/uiux1.svg";
-import uiux2 from "../assets/images/uiux2.svg";
-import hounter from "../assets/images/hounter.svg";
+import ecommerce from "../assets/images/ecommerce.webp";
+import uiux1 from "../assets/images/uiux1.webp";
+import uiux2 from "../assets/images/uiux2.webp";
+import hounter from "../assets/images/hounter.webp";
 
 import iconReact from "../assets/icons/icon-react.svg";
 import iconTypescript from "../assets/icons/icon-typescript.svg";
@@ -44,7 +44,7 @@ const i18n = getI18N({ currentLocale })
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <Image src={ecommerce} class="w-full" alt="Fast Ecommerce" />
+        <Image loading="lazy" src={ecommerce} class="w-full" alt="Fast Ecommerce" />
         <div
           class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
         >
@@ -113,6 +113,7 @@ const i18n = getI18N({ currentLocale })
           src={uiux1}
           class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
           alt="AQFX"
+          loading="lazy"
         />
       </div>
       <div class="w-full flex items-center justify-between">
@@ -136,7 +137,7 @@ const i18n = getI18N({ currentLocale })
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <Image src={hounter} class="w-full" alt="Fast Ecommerce" />
+        <Image src={hounter} class="w-full" alt="Hounter" loading="lazy" />
         <div
           class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
         >
@@ -204,6 +205,7 @@ const i18n = getI18N({ currentLocale })
           src={uiux2}
           class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
           alt="Fibo Academy"
+          loading="lazy"
         />
       </div>
       <div class="w-full flex items-center justify-between">

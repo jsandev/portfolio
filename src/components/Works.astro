@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
 
-import flip from "../assets/icons/flip.svg";
-import animalsFrends from "../assets/icons/animals-frends.png";
-import kgAcademy from "../assets/icons/kg.png";
+import flip from "../assets/images/flip.webp";
+import animalsFrends from "../assets/images/animals-frends.webp";
+import kgAcademy from "../assets/images/kg.webp";
 
 import { getI18N } from '../i18n';
 
@@ -46,7 +46,7 @@ const i18n = getI18N({ currentLocale })
       class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
-        <Image src={flip} class="w-full h-full" alt="Flip Inversiones App" />
+        <Image loading="lazy" src={flip} class="w-full h-full" alt="Flip Inversiones App" />
       </div>
       <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
@@ -147,6 +147,7 @@ const i18n = getI18N({ currentLocale })
           src={animalsFrends}
           class="w-full h-full object-cover"
           alt={i18n.MY_WORKS.ANIMALS_FRENDS.TITLE}
+          loading="lazy"
         />
       </div>
     </div>
@@ -154,7 +155,7 @@ const i18n = getI18N({ currentLocale })
       class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
-        <Image src={kgAcademy} class="w-full h-full" alt="KG Academy" />
+        <Image src={kgAcademy} class="w-full h-full" alt="KG Academy" loading="lazy" />
       </div>
       <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
