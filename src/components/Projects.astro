@@ -1,8 +1,8 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
-import { getI18N } from '../i18n';
+import { getI18N } from "../i18n";
 
 import ecommerce from "../assets/images/ecommerce.webp";
 import jsTradingForex from "../assets/images/js-trading-forex.webp";
@@ -17,8 +17,8 @@ import iconHtml from "../assets/icons/icon-html.svg";
 import iconNextjsMini from "../assets/icons/icon-nextjs-mini.svg";
 import iconTailwindMini from "../assets/icons/icon-tailwindcss-mini.svg";
 
-const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <section
@@ -34,7 +34,9 @@ const i18n = getI18N({ currentLocale })
         class="hidden md:flex absolute top-[50%] -translate-x-1/2 left-[-2rem] w-[2rem] h-[1px] bg-primary"
       ></span>
     </h1>
-    <h4 class="font-ubuntu-condensed text-center md:text-left text-[1.125rem] text-secondary">
+    <h4
+      class="font-ubuntu-condensed text-center md:text-left text-[1.125rem] text-secondary"
+    >
       {i18n.PROJECTS.DESCRIPTION}
     </h4>
   </div>
@@ -45,7 +47,80 @@ const i18n = getI18N({ currentLocale })
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <Image loading="lazy" src={ecommerce} class="w-full" alt="Fast Ecommerce" />
+        <Image
+          loading="lazy"
+          src={jsTradingForex}
+          class="w-full"
+          alt="JS Trading Forex"
+        />
+        <div
+          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
+        >
+          <div class="flex flex-col items-center gap-[0.625rem]">
+            <h6
+              class="font-ubuntu-condensed text-[0.875rem] text-white text-center"
+            >
+              {i18n.PROJECTS.TECH_TEXT}
+            </h6>
+            <div class="flex items-center gap-[0.625rem]">
+              <Image src={iconHtml} width="24" alt="HTML" />
+              <Image src={iconTailwindMini} width="24" alt="TailwindCss" />
+              <Image src={iconVue} width="24" height="24" alt="Vue" />
+              <Image
+                src={iconTypescript}
+                width="24"
+                height="24"
+                alt="Typescript"
+              />
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-2 gap-[0.5rem]">
+            <a
+              href="https://js-trading-forex.vercel.app/"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed grid place-content-center text-primary text-[0.875rem] rounded-[0.5rem]"
+            >
+              {i18n.PROJECTS.BUTTON_VISIT}
+            </a>
+            <a
+              href="https://github.com/jsandev/js-trading-forex"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed flex items-center justify-center gap-[0.5rem] text-primary text-[0.875rem] rounded-[0.5rem] leading-[2rem]"
+            >
+              <Icon name="mdi:github" size={24} />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex items-center justify-between">
+        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
+          JS Trading Forex
+        </h3>
+        <span
+          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
+        >
+          Landing
+        </span>
+      </div>
+
+      <span
+        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
+      >
+        01
+      </span>
+    </div>
+    <div class="relative w-full flex flex-col gap-[1.25rem]">
+      <div
+        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
+      >
+        <Image
+          loading="lazy"
+          src={ecommerce}
+          class="w-full"
+          alt="Fast Ecommerce"
+        />
         <div
           class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
         >
@@ -92,69 +167,6 @@ const i18n = getI18N({ currentLocale })
       <div class="w-full flex items-center justify-between">
         <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
           Fast Ecommerce
-        </h3>
-        <span
-          class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
-        >
-          Landing
-        </span>
-      </div>
-
-      <span
-        class="absolute top-[-0.625rem] right-[-0.625rem] w-[2.75rem] h-[2.75rem] grid place-content-center bg-primary text-[1.375rem] text-white rounded-[0.3125rem]"
-      >
-        01
-      </span>
-    </div>
-    <div class="relative w-full flex flex-col gap-[1.25rem]">
-      <div
-        class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
-      >
-        <Image loading="lazy" src={jsTradingForex} class="w-full" alt="JS Trading Forex" />
-        <div
-          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
-        >
-          <div class="flex flex-col items-center gap-[0.625rem]">
-            <h6
-              class="font-ubuntu-condensed text-[0.875rem] text-white text-center"
-            >
-              {i18n.PROJECTS.TECH_TEXT}
-            </h6>
-            <div class="flex items-center gap-[0.625rem]">
-              <Image src={iconHtml} width="24" alt="HTML" />
-              <Image src={iconTailwindMini} width="24" alt="TailwindCss" />
-              <Image src={iconVue} width="24" height="24" alt="Vue" />
-              <Image
-                src={iconTypescript}
-                width="24"
-                height="24"
-                alt="Typescript"
-              />
-            </div>
-          </div>
-
-          <div class="w-full grid grid-cols-2 gap-[0.5rem]">
-            <a
-              href="https://js-trading-forex.vercel.app/"
-              target="_blank"
-              class="w-full h-[2rem] bg-white font-ubuntu-condensed grid place-content-center text-primary text-[0.875rem] rounded-[0.5rem]"
-            >
-              {i18n.PROJECTS.BUTTON_VISIT}
-            </a>
-            <a
-              href="https://github.com/jsandev/js-trading-forex"
-              target="_blank"
-              class="w-full h-[2rem] bg-white font-ubuntu-condensed flex items-center justify-center gap-[0.5rem] text-primary text-[0.875rem] rounded-[0.5rem] leading-[2rem]"
-            >
-              <Icon name="mdi:github" size={24} />
-              Github
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="w-full flex items-center justify-between">
-        <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
-          JS Trading Forex
         </h3>
         <span
           class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
