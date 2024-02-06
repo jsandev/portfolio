@@ -5,10 +5,11 @@ import { Icon } from "astro-icon/components";
 import { getI18N } from '../i18n';
 
 import ecommerce from "../assets/images/ecommerce.webp";
-import uiux1 from "../assets/images/uiux1.webp";
+import jsTradingForex from "../assets/images/js-trading-forex.webp";
 import uiux2 from "../assets/images/uiux2.webp";
 import hounter from "../assets/images/hounter.webp";
 
+import iconVue from "../assets/icons/icon-vue.svg";
 import iconReact from "../assets/icons/icon-react.svg";
 import iconTypescript from "../assets/icons/icon-typescript.svg";
 import iconRedux from "../assets/icons/icon-redux.svg";
@@ -109,21 +110,56 @@ const i18n = getI18N({ currentLocale })
       <div
         class="relative group w-full h-[34.375rem] shadow-[0_11px_60px_rgba(0,0,0,0.1)] rounded-[0.625rem] overflow-hidden"
       >
-        <Image
-          src={uiux1}
-          class="w-full group-hover:translate-y-[-800px] transition-[transform] duration-[1000ms]"
-          alt="AQFX"
-          loading="lazy"
-        />
+        <Image loading="lazy" src={jsTradingForex} class="w-full" alt="JS Trading Forex" />
+        <div
+          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center gap-[5rem] rounded-[0.625rem] bg-primary bg-opacity-95 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-[200ms] px-[4rem]"
+        >
+          <div class="flex flex-col items-center gap-[0.625rem]">
+            <h6
+              class="font-ubuntu-condensed text-[0.875rem] text-white text-center"
+            >
+              {i18n.PROJECTS.TECH_TEXT}
+            </h6>
+            <div class="flex items-center gap-[0.625rem]">
+              <Image src={iconHtml} width="24" alt="HTML" />
+              <Image src={iconTailwindMini} width="24" alt="TailwindCss" />
+              <Image src={iconVue} width="24" height="24" alt="Vue" />
+              <Image
+                src={iconTypescript}
+                width="24"
+                height="24"
+                alt="Typescript"
+              />
+            </div>
+          </div>
+
+          <div class="w-full grid grid-cols-2 gap-[0.5rem]">
+            <a
+              href="https://js-trading-forex.vercel.app/"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed grid place-content-center text-primary text-[0.875rem] rounded-[0.5rem]"
+            >
+              {i18n.PROJECTS.BUTTON_VISIT}
+            </a>
+            <a
+              href="https://github.com/jsandev/js-trading-forex"
+              target="_blank"
+              class="w-full h-[2rem] bg-white font-ubuntu-condensed flex items-center justify-center gap-[0.5rem] text-primary text-[0.875rem] rounded-[0.5rem] leading-[2rem]"
+            >
+              <Icon name="mdi:github" size={24} />
+              Github
+            </a>
+          </div>
+        </div>
       </div>
       <div class="w-full flex items-center justify-between">
         <h3 class="font-medium text-[1.25rem] text-primary tracking-[-0.04em]">
-          AQFX
+          JS Trading Forex
         </h3>
         <span
           class="bg-primary font-ubuntu-condensed text-[0.875rem] text-white px-[0.625rem] py-[0.125rem] rounded-[0.3125rem]"
         >
-          UI/UX
+          Landing
         </span>
       </div>
 
