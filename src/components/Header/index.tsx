@@ -50,7 +50,7 @@ export const Header: React.FC<IProps> = ({ currentLocale }) => {
     >
       <div className="relative w-full h-full max-w-[76.5rem] mx-auto flex items-center justify-between px-[1.5rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem]">
         <a
-          href=""
+          href="/"
           className="font-ubuntu font-bold text-[1.25rem] text-primary"
         >
           JS.
@@ -80,6 +80,11 @@ export const Header: React.FC<IProps> = ({ currentLocale }) => {
           <Link
             title={i18n.MENU.SERVICES}
             href="#services"
+            setMenuVisible={setMenuVisible}
+          />
+          <Link
+            title={i18n.MENU.EXPERIENCES}
+            href="#experiences"
             setMenuVisible={setMenuVisible}
           />
           <Link

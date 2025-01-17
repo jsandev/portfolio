@@ -1,0 +1,400 @@
+---
+import { Image } from "astro:assets";
+
+import { getI18N } from "../i18n";
+
+import iconKreante from "../assets/images/kreante.svg";
+import iconMaxVentas from "../assets/images/maxventas.webp";
+import iconMaxSupervisores from "../assets/images/maxsupervisor.webp";
+import iconMatilde from "../assets/images/matilde.webp";
+import iconHeadcount from "../assets/images/headcount.webp";
+import iconAzz from "../assets/images/azz.jpg";
+import iconTutoom from "../assets/images/tutoom.svg";
+import iconTutoomIcon from "../assets/images/tutoom-icon.svg";
+import iconArrowUpRight from "../assets/icons/arrow-up-right.svg";
+import iconGHp from "../assets/images/ghp.webp";
+import iconFosefap from "../assets/images/fosefap.webp";
+import iconAQFX from "../assets/images/aqfx.webp";
+import iconNetqulqi from "../assets/images/netqulqi.webp";
+import iconAzzDigital from "../assets/images/azzdigital.webp";
+import iconTin from "../assets/images/tin.webp";
+import iconLawyer from "../assets/images/lawyer.webp";
+import iconKG from "../assets/images/kgtradingacadamy.webp";
+import iconSimsa from "../assets/images/simsa.png";
+import iconSintad from "../assets/images/sintad.png";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<section
+  id="experiences"
+  class="w-full h-full max-w-[76.5rem] grid grid-cols-1 items-center gap-[7rem] mx-auto pt-[8rem] md:pt-[10rem] px-[1.5rem] sm:px-[2rem] md:px-[3rem] lg:px-[4rem]"
+>
+  <div class="w-full max-w-[30rem] mx-auto flex flex-col items-center">
+    <h4
+      class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-center text-secondary leading-[1.75rem]"
+    >
+      {i18n.EXPERIENCES.TITLE}
+    </h4>
+    <h1
+      class="font-medium text-[1.5rem] sm:text-[2rem] text-primary text-center leading-tight"
+    >
+      {i18n.EXPERIENCES.DESCRIPTION}
+    </h1>
+  </div>
+  <div class="flex flex-col items-center">
+    <div class="w-full grid grid-cols-[1fr_auto_1fr] gap-[1.5rem]">
+      <div class="order-3 lg:order-1"></div>
+      <div class="order-1 h-full flex flex-col justify-end items-center">
+        <div class="relative h-1/2 w-[0.125rem] bg-primary">
+          <div
+            class="w-[1rem] h-[1rem] absolute left-[50%] top-[-1rem] -translate-x-1/2 rounded-full border bg-white border-primary grid place-content-center"
+          >
+            <span class="w-[4px] h-[4px] rounded-full bg-primary"></span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="order-2 relative w-full p-[1.5rem] flex flex-col gap-[1rem] border border-gray-200 rounded-[1rem] mb-[1.5rem]"
+      >
+        <div class="w-full flex items-start justify-between">
+          <div class="flex flex-col items-start">
+            <a
+              href="https://www.linkedin.com/company/kreanteoficial/posts/?feedView=all"
+              target="_blank"
+              class="font-semibold text-[1rem] text-primary hover:underline flex items-center gap-[0.25rem]"
+              >Frontend Senior Web/Mobile <Image
+                src={iconArrowUpRight}
+                alt="Tutoom"
+                width={18}
+              />
+            </a>
+            <h3 class="font-medium text-[0.875rem] text-secondary">
+              Kreante S.A.C · {i18n.EXPERIENCES.COMPLETE_JOB}
+            </h3>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              {i18n.EXPERIENCES.KREANTE.PERIOD}
+            </h6>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              Lima, Perú · {i18n.EXPERIENCES.REMOTE}
+            </h6>
+          </div>
+
+          <a
+            href="https://www.linkedin.com/company/kreanteoficial/posts/?feedView=all"
+            target="_blank"
+          >
+            <Image
+              src={iconKreante}
+              alt="Kreante"
+              class="w-[4rem] rounded-[0.5rem] border border-gray-100"
+            />
+          </a>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.SKILLS}:
+          </h6>
+          <p class="font-medium text-[0.75rem] text-primary60">
+            Flutter · Vuejs · React · Nextjs · Redux Toolkit · TailwindCss ·
+            Typescript · Dart · Javascript · Vuex · Pinia · Nuxtjs · Bootstrap ·
+            HTML5 · CSS3 · SASS · MySQL · Firebase · Design System · Storybook ·
+            Scrum · Bitbucket · JIRA · Responsive Design
+          </p>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.PROJECTS}:
+          </h6>
+          <div class="w-full grid grid-cols-4 gap-[0.5rem]">
+            <Image
+              src={iconMaxVentas}
+              alt="Max Ventas"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconMatilde}
+              alt="Matilde"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconMaxSupervisores}
+              alt="Max Supervisor"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconHeadcount}
+              alt="Headcount Project"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full grid grid-cols-[1fr_auto_1fr] gap-[1.5rem]">
+      <div
+        class="order-2 lg:order-1 relative w-full p-[1.5rem] flex flex-col gap-[1rem] border border-gray-200 rounded-[1rem] mb-[1.5rem]"
+      >
+        <div class="w-full flex items-start justify-between">
+          <div class="flex flex-col items-start">
+            <a
+              href="https://www.linkedin.com/company/tutoom/posts/?feedView=all"
+              target="_blank"
+              class="font-semibold text-[1rem] text-primary hover:underline flex items-center gap-[0.25rem]"
+              >Tutoom <Image src={iconArrowUpRight} alt="Tutoom" width={18} />
+            </a>
+            <h3 class="font-medium text-[0.875rem] text-secondary">
+              {i18n.EXPERIENCES.TUTOOM.PERIOD}
+            </h3>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              Lima, Perú · {i18n.EXPERIENCES.REMOTE}
+            </h6>
+          </div>
+
+          <a
+            href="https://www.linkedin.com/company/tutoom/posts/?feedView=all"
+            target="_blank"
+          >
+            <Image
+              src={iconTutoom}
+              alt="Tutoom"
+              class="w-[4rem] rounded-[0.5rem] border border-gray-100"
+            />
+          </a>
+        </div>
+        <div>
+          <h1 class="font-semibold text-[1rem] text-primary">
+            Fullstack Developer
+          </h1>
+          <h6 class="font-normal text-[0.875rem] text-primary60">
+            {i18n.EXPERIENCES.TUTOOM.FULLSTACK_PERIOD}
+          </h6>
+        </div>
+        <div>
+          <h1 class="font-semibold text-[1rem] text-primary">
+            Frontend Developer
+          </h1>
+          <h6 class="font-normal text-[0.875rem] text-primary60">
+            {i18n.EXPERIENCES.TUTOOM.FRONTEND_PERIOD}
+          </h6>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.SKILLS}:
+          </h6>
+          <p class="font-medium text-[0.75rem] text-primary60">
+            React · Nextjs · Redux Toolkit · TailwindCss · Typescript ·
+            Javascript · HTML5 · CSS3 · SASS · Firebase · RxJS · PHP · Moodle
+            LMS · WebRTC · GCP · Nodejs · Express.js · Stripe
+          </p>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.PROJECTS}:
+          </h6>
+          <div class="w-full grid grid-cols-[4rem_1fr] gap-[0.75rem]">
+            <a
+              href="https://tutoom.com/"
+              target="_blank"
+              class="w-full relative rounded-[0.5rem] border border-gray-200 shadow-sm overflow-hidden"
+            >
+              <Image
+                src={iconTutoomIcon}
+                alt="Tutoom"
+                class="hover:scale-125"
+              />
+              <div class="absolute bottom-[4px] right-[4px]">
+                <Image src={iconArrowUpRight} alt="Tutoom" width={18} />
+              </div>
+            </a>
+            <div class="flex flex-col gap-[0.25rem]">
+              <a
+                href="https://tutoom.com/"
+                target="_blank"
+                class="font-normal text-[0.875rem] text-primary hover:underline"
+              >
+                Web oficial
+              </a>
+              <p class="font-medium text-[0.875rem] text-primary60">
+                {i18n.EXPERIENCES.TUTOOM.LINK_TITLE}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="order-1 lg:order-2 h-full flex flex-col justify-end items-center"
+      >
+        <div class="relative h-full w-[0.125rem] bg-primary">
+          <div
+            class="w-[1rem] h-[1rem] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border bg-white border-primary grid place-content-center"
+          >
+            <span class="w-[4px] h-[4px] rounded-full bg-primary"></span>
+          </div>
+        </div>
+      </div>
+      <div class="order-3"></div>
+    </div>
+    <div class="w-full grid grid-cols-[1fr_auto_1fr] gap-[1.5rem]">
+      <div class="order-3 lg:order-1"></div>
+      <div
+        class="order-1 lg:order-2 h-full flex flex-col justify-end items-center"
+      >
+        <div class="relative h-full w-[0.125rem] bg-primary">
+          <div
+            class="w-[1rem] h-[1rem] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border bg-white border-primary grid place-content-center"
+          >
+            <span class="w-[0.25rem] h-[0.25rem] rounded-full bg-primary"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="order-2 lg:order-3 relative w-full p-[1.5rem] flex flex-col gap-[1rem] border border-gray-200 rounded-[1rem] mb-[1.5rem]"
+      >
+        <div class="w-full flex items-start justify-between">
+          <div class="flex flex-col items-start">
+            <a
+              href="https://www.facebook.com/Azz.Digital/?locale=es_LA"
+              target="_blank"
+              class="font-semibold text-[1rem] text-primary hover:underline flex items-center gap-[0.25rem]"
+              >React Developer
+              <Image src={iconArrowUpRight} alt="Tutoom" width={18} />
+            </a>
+            <h3 class="font-medium text-[0.875rem] text-secondary">
+              Azz Digital Company · {i18n.EXPERIENCES.COMPLETE_JOB}
+            </h3>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              {i18n.EXPERIENCES.AZZ.PERIOD}
+            </h6>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              Lima, Perú · {i18n.EXPERIENCES.REMOTE}
+            </h6>
+          </div>
+
+          <a
+            href="https://www.facebook.com/Azz.Digital/?locale=es_LA"
+            target="_blank"
+          >
+            <Image
+              src={iconAzz}
+              alt="Azz Digital Company"
+              class="w-[4rem] rounded-[0.5rem] border border-gray-100"
+            />
+          </a>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.SKILLS}:
+          </h6>
+          <p class="font-medium text-[0.75rem] text-primary60">
+            React · Nextjs · HTML5 · CSS3 · SASS · Javascript · Typescript ·
+            TailwindCss · UI/UX · GatsbyJS · Stripe · Redux · Figma · Responsive
+            design
+          </p>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.PROJECTS}:
+          </h6>
+          <div class="w-full grid grid-cols-4 gap-[0.5rem]">
+            <Image
+              src={iconAzzDigital}
+              alt="Azz Digital Company"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconKG}
+              alt="KG Trading Academy"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconLawyer}
+              alt="Landing Page Lawyer"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconTin}
+              alt="Tin"
+              class="rounded-[0.5rem] h-full border border-gray-200 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full grid grid-cols-[1fr_auto_1fr] gap-[1.5rem]">
+      <div
+        class="order-2 lg:order-1 relative w-full p-[1.5rem] flex flex-col gap-[1rem] border border-gray-200 rounded-[1rem] mb-[1.5rem]"
+      >
+        <div class="w-full flex items-start justify-between">
+          <div class="flex flex-col items-start">
+            <h1
+              class="font-semibold text-[1rem] text-primary hover:underline flex items-center gap-[0.25rem]"
+            >
+              Frontend Developer
+            </h1>
+            <h3 class="font-medium text-[0.875rem] text-secondary">
+              {i18n.EXPERIENCES.FREELANCE.JOB_TITLE}
+            </h3>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              {i18n.EXPERIENCES.FREELANCE.PERIOD}
+            </h6>
+            <h6 class="font-normal text-[0.875rem] text-primary60">
+              Lima, Perú · {i18n.EXPERIENCES.REMOTE}
+            </h6>
+          </div>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.SKILLS}:
+          </h6>
+          <p class="font-medium text-[0.75rem] text-primary60">
+            PHP · MySQL · JavaScript · UI · UX · CodeIgniter · UI/UX · Figma ·
+            Responsive Design
+          </p>
+        </div>
+        <div class="w-full flex flex-col">
+          <h6 class="font-normal text-[0.875rem] text-primary">
+            {i18n.EXPERIENCES.PROJECTS}:
+          </h6>
+          <div class="w-full grid grid-cols-4 gap-[0.5rem]">
+            <Image
+              src={iconGHp}
+              alt="GHP"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconFosefap}
+              alt="Fosefap"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconAQFX}
+              alt="AQFX"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+            <Image
+              src={iconNetqulqi}
+              alt="Netqulqi"
+              class="rounded-[0.5rem] border border-gray-200 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="order-1 lg:order-2 h-full flex flex-col justify-end items-center"
+      >
+        <div class="relative h-full w-[0.125rem] bg-primary">
+          <div
+            class="w-[1rem] h-[1rem] absolute left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 rounded-full border bg-white border-primary grid place-content-center"
+          >
+            <span class="w-[0.25rem] h-[0.25rem] rounded-full bg-primary"
+            ></span>
+          </div>
+        </div>
+      </div>
+      <div class="order-3"></div>
+    </div>
+  </div>
+</section>

@@ -1,11 +1,11 @@
 ---
-import { Image } from 'astro:assets';
+import { Image } from "astro:assets";
 
 import flip from "../assets/images/flip.webp";
 import animalsFrends from "../assets/images/animals-frends.webp";
 import kgAcademy from "../assets/images/kg.webp";
 
-import { getI18N } from '../i18n';
+import { getI18N } from "../i18n";
 
 import iconGooglePlay from "../assets/icons/icon-google-play.svg";
 import iconAppStore from "../assets/icons/icon-app-store.svg";
@@ -20,8 +20,8 @@ import iconTailwind from "../assets/icons/icon-tailwindcss.svg";
 import iconStripe from "../assets/icons/icon-stripe.svg";
 import iconSocket from "../assets/icons/icon-socket.svg";
 
-const { currentLocale } = Astro
-const i18n = getI18N({ currentLocale })
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <section
@@ -46,7 +46,12 @@ const i18n = getI18N({ currentLocale })
       class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
     >
       <div class="flex items-center justify-center">
-        <Image loading="lazy" src={flip} class="w-full h-full" alt="Flip Inversiones App" />
+        <Image
+          loading="lazy"
+          src={flip}
+          class="w-full h-full"
+          alt="Flip Inversiones App"
+        />
       </div>
       <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
         <h1
@@ -98,7 +103,12 @@ const i18n = getI18N({ currentLocale })
             <Image src={iconRedux} width="24" height="24" alt="Redux" />
             <Image src={iconReactNavigation} alt="Redux" />
             <Image src={iconExpo} alt="Expo" />
-            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <Image
+              src={iconTypescript}
+              width="24"
+              height="24"
+              alt="Typescript"
+            />
             <Image src={iconReact} width="24" height="24" alt="React" />
           </div>
         </div>
@@ -137,7 +147,12 @@ const i18n = getI18N({ currentLocale })
             <Image src={iconHtml} width="24" alt="HTML" />
             <Image src={iconReact} width="24" height="24" alt="React" />
             <Image src={iconNextjs} width="50" alt="Nextjs" />
-            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
+            <Image
+              src={iconTypescript}
+              width="24"
+              height="24"
+              alt="Typescript"
+            />
             <Image src={iconTailwind} width="110" alt="TailwindCss" />
           </div>
         </div>
@@ -149,53 +164,6 @@ const i18n = getI18N({ currentLocale })
           alt={i18n.MY_WORKS.ANIMALS_FRENDS.TITLE}
           loading="lazy"
         />
-      </div>
-    </div>
-    <div
-      class="w-full flex flex-col-reverse md:grid md:grid-cols-[minmax(300px,1fr)_1fr] gap-[3rem] items-center"
-    >
-      <div class="flex items-center justify-center">
-        <Image src={kgAcademy} class="w-full h-full" alt="KG Academy" loading="lazy" />
-      </div>
-      <div class="w-full flex flex-col items-center md:items-end gap-[1.25rem]">
-        <h1
-          class="font-medium text-[1.5rem] lg:text-[2rem] text-primary text-right tracking-[-0.04em] whitespace-nowrap"
-        >
-          {i18n.MY_WORKS.KG.TITLE}
-        </h1>
-        <p
-          class="font-ubuntu-condensed text-[1rem] sm:text-[1.125rem] text-secondary text-center md:text-right leading-[1.75rem]"
-        >
-          {i18n.MY_WORKS.KG.DESCRIPTION}
-        </p>
-        <a
-          href="https://kgtradingacademy.com/"
-          target="_blank"
-          class="w-full max-w-[7.5rem] h-[2rem] grid place-content-center border-[1px] border-primary font-ubuntu-condensed text-[0.875rem] text-primary text-center rounded-[0.5rem] hover:bg-primary hover:text-white transition-[background] duration-[150ms]"
-        >
-          {i18n.MY_WORKS.BUTTON_TITLE}
-        </a>
-        <div
-          class="flex flex-col items-center md:items-end gap-[0.3125rem] mt-[0.3125rem]"
-        >
-          <h6
-            class="font-ubuntu-condensed text-[0.875rem] text-secondary text-right"
-          >
-            {i18n.MY_WORKS.TECH_TEXT}
-          </h6>
-          <div
-            class="flex flex-row flex-wrap justify-center md:justify-end items-center gap-[0.625rem]"
-          >
-            <Image src={iconHtml} width="24" alt="HTML" />
-            <Image src={iconReact} width="24" height="24" alt="React" />
-            <Image src={iconNextjs} width="50" alt="Nextjs" />
-            <Image src={iconTypescript} width="24" height="24" alt="Typescript" />
-            <Image src={iconRedux} width="24" height="24" alt="Redux" />
-            <Image src={iconStripe} width="50" alt="Stripe" />
-            <Image src={iconSocket} width="24" alt="Websocket" />
-            <Image src={iconTailwind} width="110" alt="TailwindCss" />
-          </div>
-        </div>
       </div>
     </div>
   </div>

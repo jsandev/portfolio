@@ -7,6 +7,7 @@
   },
   "MENU": {
     "HOME": "Inicio",
+    "EXPERIENCES": "Experiencias",
     "SERVICES": "Servicios",
     "WORKS": "Mis trabajos",
     "PROJECTS": "Proyectos",
@@ -36,6 +37,30 @@
       "DESCRIPTION": "Desarrollo de aplicaciones móviles innovadoras para tu negocio."
     }
   },
+  "EXPERIENCES": {
+    "TITLE": "Experiencias",
+    "DESCRIPTION": "Más de 5 años de experiencia en el desarrollo de software",
+    "SKILLS": "Aptitudes",
+    "PROJECTS": "Proyectos",
+    "COMPLETE_JOB": "Jornada completa",
+    "REMOTE": "Remoto",
+    "KREANTE": {
+      "PERIOD": "Feb 2024 - Ene 2025 | 1 año"
+    },
+    "TUTOOM": {
+      "LINK_TITLE": "Renueva la enseñanza online con Tutoom, tu salón de clases virtual",
+      "PERIOD": "Jornada completa · 2 años 8 meses",
+      "FULLSTACK_PERIOD": "Ene 2023 - Dic 2023 · 1 año",
+      "FRONTEND_PERIOD": "Jun 2021 - Ene 2023 · 1 año 8 meses"
+    },
+    "AZZ": {
+      "PERIOD": "Oct 2020 - Jun 2021 · 9 meses"
+    },
+    "FREELANCE": {
+      "JOB_TITLE": "Profesional independiente",
+      "PERIOD": "Abr 2020 - Oct 2020 · 7 meses"
+    }
+  },
   "MY_WORKS": {
     "TITLE": "Mis trabajos",
     "DESCRIPTION": "Ánimate a ver mis trabajos que hice.",
@@ -56,7 +81,7 @@
     }
   },
   "PROJECTS": {
-    "TITLE": "Proyectos",
+    "TITLE": "Proyectos personales",
     "DESCRIPTION": "Mira mis pasatiempos y proyectos personales.",
     "TECH_TEXT": "Tecnologías aplicadas:",
     "BUTTON_VISIT": "Visitar"

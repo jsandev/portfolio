@@ -8,6 +8,7 @@
   "MENU": {
     "HOME": "Home",
     "SERVICES": "Services",
+    "EXPERIENCES": "Experiences",
     "WORKS": "My works",
     "PROJECTS": "Projects",
     "CONTACT": "Contact me"
@@ -36,6 +37,30 @@
       "DESCRIPTION": "Development of innovative mobile applications for your business."
     }
   },
+  "EXPERIENCES": {
+    "TITLE": "Experiences",
+    "DESCRIPTION": "More than 5 years of experience in software development",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "COMPLETE_JOB": "Full time",
+    "REMOTE": "Remote",
+    "KREANTE": {
+      "PERIOD": "Feb 2024 - Jan 2025 | 1 year"
+    },
+    "TUTOOM": {
+      "LINK_TITLE": "Renew online teaching with Tutoom, your virtual classroom",
+      "PERIOD": "Full time · 2 years 8 months",
+      "FULLSTACK_PERIOD": "Jan 2023 - Dec 2023 · 1 year",
+      "FRONTEND_PERIOD": "Jun 2021 - Jan 2023 · 1 year 8 months"
+    },
+    "AZZ": {
+      "PERIOD": "Oct 2020 - Jun 2021 · 9 months"
+    },
+    "FREELANCE": {
+      "JOB_TITLE": "Freelancer",
+      "PERIOD": "Abr 2020 - Oct 2020 · 7 months"
+    }
+  },
   "MY_WORKS": {
     "TITLE": "My Works",
     "DESCRIPTION": "Come see my work that I did.",
@@ -56,7 +81,7 @@
     }
   },
   "PROJECTS": {
-    "TITLE": "Projects",
+    "TITLE": "Personal Projects",
     "DESCRIPTION": "Check out my hobbies and personal projects.",
     "TECH_TEXT": "Technologies",
     "BUTTON_VISIT": "Visit"
